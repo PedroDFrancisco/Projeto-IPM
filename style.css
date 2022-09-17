@@ -4,18 +4,25 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
-
-.hero{
+.back{
     background: #383838;
     min-height: 100vh;
     width: 100%;
     color: white;
     position: relative;
 }
+.menu{
+    background: #383838;
+    width: 100%;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index:100;
+}
 nav{
     display: flex;
     align-items: center;
-    padding: 20px 8%;
+    padding: 10px 8%;
 }
 nav .logo_img{
     width: 160px;
@@ -36,13 +43,17 @@ nav ul li a{
     text-decoration: none;
     color: white;
 }
+nav ul li a:hover{
+    text-decoration: none;
+    color: lightgreen;
+}
 
 .sobre-nos{
-    margin: 50px;
+    margin: 100px;
 }
 .assignments{
-    margin: 50px;
+    margin: 100px;
 }
 .projeto{
-    margin: 50px;
+    margin: 100px;
 }
