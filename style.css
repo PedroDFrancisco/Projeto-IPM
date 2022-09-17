@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    background: #383838;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+nav .logo_img{
+    width: 160px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    font-size: 20px;
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sobre-nos{
+    margin: 50px;
+}
+.assignments{
+    margin: 50px;
+}
+.projeto{
+    margin: 50px;
+}
