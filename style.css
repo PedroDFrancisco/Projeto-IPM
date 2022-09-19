@@ -55,6 +55,9 @@ nav ul li a:hover{
     padding-top: 100px;
     padding-left: 100px;
 }
+.assignments ul li {
+    list-style: none;
+}
 .project{
     padding-top: 100px;
     padding-left: 100px;
