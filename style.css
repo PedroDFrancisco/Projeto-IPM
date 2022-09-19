@@ -48,11 +48,14 @@ nav ul li a:hover{
     color: lightgreen;
 }
 .about-us{
-    margin: 100px;
+    padding-top: 100px;
+    padding-left: 100px;
 }
 .assignments{
-    margin: 100px;
+    padding-top: 100px;
+    padding-left: 100px;
 }
 .project{
-    margin: 100px;
+    padding-top: 100px;
+    padding-left: 100px;
 }
