@@ -4,6 +4,18 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        overflow: scroll;
+    }
+    nav ul ::-webkit-scrollbar {
+        display: none;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
 .back{
     background: #383838;
     min-height: 100vh;
