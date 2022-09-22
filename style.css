@@ -34,12 +34,10 @@ html {
 nav{
     display: flex;
     align-items: center;
-    padding: 10px 8%;
+    padding: 10px 7%;
 }
-nav .logo_img{
-    width: 130px;
-    margin-right: 20px;
-    cursor: pointer;
+nav .logo_img {
+    height: 60px;
 }
 nav ul{
     flex: 1;
