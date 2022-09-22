@@ -37,6 +37,8 @@ nav{
     padding: 10px 7%;
 }
 nav .logo_img {
+    margin-right: 20px;
+    cursor: pointer;
     height: 60px;
 }
 nav ul{
