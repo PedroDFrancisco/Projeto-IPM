@@ -8,6 +8,7 @@
     nav ul {
         display: flex;
         overflow: scroll;
+        margin-left: 25px;
     }
     nav ul ::-webkit-scrollbar {
         display: none;
@@ -39,7 +40,7 @@ nav{
 nav .logo_img {
     margin-right: 20px;
     cursor: pointer;
-    height: 60px;
+    height: 55px;
 }
 nav ul{
     flex: 1;
