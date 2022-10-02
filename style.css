@@ -83,3 +83,20 @@ a {
 a:hover{
     color: blue;
 }
+.logo_sketch{
+    height: 240px;
+}
+.logo_site{
+    margin-left: 50px;
+    height: 240px;
+    background-color: #383838;
+}
+.logo_letras{
+    margin-left: 50px;
+    height: 240px;
+    background-color: #383838;
+}
+.logo_bandeira{
+    margin-top: 50px;
+    height: 240px;
+}
