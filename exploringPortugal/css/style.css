@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 html {
@@ -27,18 +27,22 @@ nav .logo_img {
 nav .lupa {
     cursor: pointer;
     height: 25px;
-    filter: invert(30%) sepia(96%) saturate(594%) hue-rotate(175deg) brightness(88%) contrast(76%);
-}
-nav .userIcon {
-    margin-left: 20px;
+    filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(640%) hue-rotate(171deg) brightness(91%) contrast(85%);}
+nav .mapa {
+    margin-left: 25px;
     cursor: pointer;
     height: 35px;
-    filter: invert(30%) sepia(96%) saturate(594%) hue-rotate(175deg) brightness(88%) contrast(76%);
+    filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(640%) hue-rotate(171deg) brightness(91%) contrast(85%);}
+nav .userIcon {
+    margin-left: 25px;
+    cursor: pointer;
+    height: 35px;
+    filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(640%) hue-rotate(171deg) brightness(91%) contrast(85%);
 }
 nav ul{
     flex: 1;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 nav ul li{
     font-size: 20px;
@@ -48,9 +52,46 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #336699; /*#003366*/
+    color: #47525E; /*#003366*/
 }
 nav ul li a:hover{
     font-weight: bold;
-    color: #336699;
+    color: #47525E;
+}
+.background {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.ponte25deabril {
+    background-position: center;
+    width: 100%;
+}
+.welcome {
+    position: absolute;
+    color: #47525E;
+    margin-top: 115px;
+    margin-left: 62%;
+    font-size: 80px;
+}
+.por {
+    position: absolute;
+    color: #006602;
+    margin-top: 190px;
+    margin-left: 62%;
+    font-size: 110px;
+}
+.tugal {
+    position: absolute;
+    color: #FF0000;
+    margin-top: 190px;
+    margin-left: 74%;
+    font-size: 110px;
+}
+footer{
+    min-height:100px; 
+    background:white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
 }
