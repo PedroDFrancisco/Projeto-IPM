@@ -23,13 +23,13 @@ html {
     position: absolute;
     margin-left: 270px;
     margin-top: 35px;
-    font-size: 20px;
+    font-size: 22px;
     color: #003366;
 }
 
 .upperMenu .stars{
-    margin-top: 30px;
-    margin-left: 410px;
+    margin-top: 31px;
+    margin-left: 420px;
     position: absolute;
     width: 140px;
 }
@@ -133,4 +133,66 @@ html {
     width: 400px;
     margin-top: 130px;
     margin-left: 1100px;
+}
+
+.lowerMenu .gallery{
+    font-size: 22px;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 50px;
+    background-color: white;
+    height: 280px;
+    width: 1030px;
+    color: #003366;
+    padding-top: 15px;
+    padding-left: 80px;
+    border-radius: 50px;
+}
+
+.lowerMenu .gallery .gallery1 {
+    margin-top: 10px;
+    position: absolute;
+    height: 200px;
+} 
+
+.lowerMenu .gallery .gallery2 {
+    margin-top: 10px;
+    margin-left: 220px;
+    position: absolute;
+    height: 200px;
+} 
+
+.lowerMenu .gallery .gallery3 {
+    margin-top: 10px;
+    margin-left: 570px;
+    position: absolute;
+    height: 200px;
+} 
+
+.lowerMenu .comments {
+    position: absolute;
+    height: 400px;
+    width: 1030px;
+    background-color: white;
+    margin-top: 310px;
+    margin-left: 50px;
+    padding-left: 80px;
+    border-radius: 50px;
+}
+
+.lowerMenu .comments .commentsTitle{
+    font-size: 22px;
+    color: #003366;
+    padding-top: 15px;
+    border-radius: 50px;
+}
+
+.lowerMenu .comments .commentSection {
+    width: 870px;
+    font-size: 15px;
+    margin-top: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    border-radius: 50px;
 }
