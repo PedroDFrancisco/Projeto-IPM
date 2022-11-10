@@ -100,3 +100,7 @@ a:hover{
     margin-top: 50px;
     height: 240px;
 }
+
+nav ul li a.useapp{
+    color: red;
+}
