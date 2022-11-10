@@ -8,26 +8,48 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.css" />
+        <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.Default.css" />
+        <script src="https://leaflet.github.io/Leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
+
+        <SCRIPT TYPE="text/javascript" SRC="../js/Map.js"></SCRIPT>
+        <SCRIPT TYPE="text/javascript" SRC="../js/Filter.js"></SCRIPT>
     </head>
-    <div class="menu">
-        <nav>
-            <a href="home.html"><img src="../../images/logo_letras_bandeira_v4.png" class="logo_img"></a>
-            <ul>
-                <li><a href="#districts">Districts</a></li>
-                <li><a href="#categories">Categories</a></li>
-                <li><a href="#trips">Trips</a></li>
-                <li><a href="#feed">Feed</a></li>
-            </ul>
-            <a href=""><img src="../../images/lupa.png" class="lupa"></a>
-            <a href="map.html"><img src="../../images/mapa.webp" class="mapa"></a>
-            <a href=""><img src="../../images/userIcon.png" class="userIcon"></a>
-        </nav>
-    </div>
-    <div class="side-menu">
-        <div class="search">
-            <input type="text" placeholder="Search location...">
-            <a href=""><img src="../../images/lupa.png" class="lupa"></a>
+
+    <BODY ONLOAD="onLoad()">
+
+        <div class="menu">
+            <nav>
+                <a href="home.html"><img src="../../images/logo_letras_bandeira_v4.png" class="logo_img"></a>
+                <ul>
+                    <li><a href="#districts">Districts</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#trips">Trips</a></li>
+                    <li><a href="#feed">Feed</a></li>
+                </ul>
+                <a href=""><img src="../../images/lupa.png" class="lupa"></a>
+                <a href="map.html"><img src="../../images/mapa.webp" class="mapa"></a>
+                <a href=""><img src="../../images/userIcon.png" class="userIcon"></a>
+            </nav>
         </div>
-        <button class="add-marker">Add marker</button>
-    </div>
+        <div class="side-menu">
+            <div class="search">
+                <input type="text" placeholder="Search location...">
+                <a href=""><img src="../../images/lupa.png" class="lupa"></a>
+            </div>
+            <div class="filter-wrapper" id="filter-wrapper">
+
+            </div>
+            <button class="add-marker">Add marker</button>
+        </div>
+
+        <div id="mapid" style="position: fixed; top: 20px; left: 30%; width: 70%; height: 100%;"></div>
+    </BODY>
+    <script> Filter();</script>
 </html>
