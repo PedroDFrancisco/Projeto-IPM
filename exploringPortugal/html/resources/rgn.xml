@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Rede Geodésica Nacional - região de Setúbal -->
+<rgn>
+  <vg>
+    <name>Test</name>
+    <order>1</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.661</latitude>
+    <longitude>-9.2044</longitude>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  
+</rgn>

@@ -26,8 +26,24 @@
     height: 30px;
     filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(640%) hue-rotate(171deg) brightness(91%) contrast(85%);
 }
+
+.side-menu .filter-wrapper {
+    background-color: white;
+    border-radius: 25px;
+    margin: 4% 3%;
+}
+
+.side-menu .filter-wrapper .filter {
+    display: flex;
+    align-items: center;
+    height: 63%;
+}
+
+.side-menu .filter-wrapper .filter .filter-image {
+    height: 50px;
+}
+
 .add-marker {
-    top: 33.5%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     position: absolute;
@@ -35,6 +51,7 @@
     border: none;
     color: white;
     padding: 15px 50px;
+    margin-top: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
