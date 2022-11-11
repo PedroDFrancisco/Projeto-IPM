@@ -33,14 +33,46 @@
     margin: 4% 3%;
 }
 
+.side-menu .filter-wrapper.off {
+    display: none;
+}
+
 .side-menu .filter-wrapper .filter {
     display: flex;
     align-items: center;
     height: 63%;
+    cursor: pointer;
 }
 
 .side-menu .filter-wrapper .filter .filter-image {
     height: 50px;
+}
+
+.side-menu .add-marker-wrapper {
+    background-color: white;
+    border-radius: 25px;
+    margin: 4% 3%;
+    height: 70%;
+    display: none;
+}
+
+.side-menu .add-marker-wrapper.on {
+    display: block;
+}
+
+.close-wrapper {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 90px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #dceeff;
+}
+
+.close-wrapper .close-icon {
+    font-size: 20px;
 }
 
 .add-marker {

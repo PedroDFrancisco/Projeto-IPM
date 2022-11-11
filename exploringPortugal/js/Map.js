@@ -380,7 +380,7 @@ class Map {
 				}
 			}		
 		}
-		this.stats ();
+		//this.stats ();
 	}
 
 	addOrdIcons(order) {
@@ -394,7 +394,7 @@ class Map {
 				}
 			}		
 		}
-		this.stats ();
+		//this.stats ();
 	}
 	
 	stats () {
@@ -485,7 +485,7 @@ class Map {
 	}
 
 	createEvents() {
-		this.lmap.on("zoomend layerremove moveend", this.stats);
+		//this.lmap.on("zoomend layerremove moveend", this.stats);
 		this.lmap.on("click", this.removePointsCircles);
 	}
 }
@@ -497,7 +497,7 @@ function onLoad()
 	map = new Map(MAP_CENTRE, 12);
 	map.addCircle(MAP_CENTRE, 100, "FCT/UNL");
 	map.createEvents();
-	map.stats();
+	//map.stats();
 }
 
 function checkboxUpdate (checkbox) {

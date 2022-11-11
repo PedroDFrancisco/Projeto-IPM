@@ -3,6 +3,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Exploring Portugal - Map</title>
+        <!--<link rel="stylesheet" href="../../../Projeto-IPM/exploringPortugal/css/homeStyle.css">-->
+        <!--<link rel="stylesheet" href="../../../Projeto-IPM/exploringPortugal/css/mapStyle.css">-->
         <link rel="stylesheet" href="../css/homeStyle.css">
         <link rel="stylesheet" href="../css/mapStyle.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +22,7 @@
 
         <SCRIPT TYPE="text/javascript" SRC="../js/Map.js"></SCRIPT>
         <SCRIPT TYPE="text/javascript" SRC="../js/Filter.js"></SCRIPT>
+        <SCRIPT TYPE="text/javascript" SRC="../js/Marker.js"></SCRIPT>
     </head>
 
     <BODY ONLOAD="onLoad()">
@@ -46,10 +49,20 @@
             <div class="filter-wrapper" id="filter-wrapper">
 
             </div>
-            <button class="add-marker">Add marker</button>
+
+            <div class="add-marker-wrapper" id="add-marker-wrapper">
+                <div class="close-wrapper" id="close-wrapper">
+                    <p class="close-icon">&#10005;</p>
+                </div>
+                
+            </div>
+            <button class="add-marker" id="add-marker">Add marker</button>
         </div>
+        
 
         <div id="mapid" style="position: fixed; top: 20px; left: 30%; width: 70%; height: 100%;"></div>
     </BODY>
-    <script> Filter();</script>
+    <script> Filter();
+            loadAddMarker();
+            </script>
 </html>
