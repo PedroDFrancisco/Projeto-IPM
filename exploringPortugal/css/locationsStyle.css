@@ -145,7 +145,6 @@ html {
     width: 1030px;
     color: #003366;
     padding-top: 15px;
-    padding-left: 80px;
     border-radius: 50px;
 }
 
@@ -153,6 +152,7 @@ html {
     margin-top: 10px;
     position: absolute;
     height: 200px;
+    padding-left: 80px;
 } 
 
 .lowerMenu .gallery .gallery2 {
@@ -160,6 +160,7 @@ html {
     margin-left: 220px;
     position: absolute;
     height: 200px;
+    padding-left: 80px;
 } 
 
 .lowerMenu .gallery .gallery3 {
@@ -167,6 +168,7 @@ html {
     margin-left: 570px;
     position: absolute;
     height: 200px;
+    padding-left: 80px;
 } 
 
 .lowerMenu .comments {
@@ -195,4 +197,25 @@ html {
     padding-bottom: 7px;
     padding-left: 15px;
     border-radius: 50px;
+}
+
+.lowerMenu .gallery .previousButton {
+    filter: invert(14%) sepia(28%) saturate(6196%) hue-rotate(195deg) brightness(91%) contrast(102%);
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 20px;
+    width: 35px;
+    transform:rotate(180deg);
+}
+
+.lowerMenu .gallery .nextButton {
+    filter: invert(14%) sepia(28%) saturate(6196%) hue-rotate(195deg) brightness(91%) contrast(102%);
+    position: absolute;
+    width: 35px;
+    margin-top: 80px;
+    margin-left: 970px;
+}
+
+.lowerMenu .gallery .galleryTitle{
+    margin-left: 80px;
 }
