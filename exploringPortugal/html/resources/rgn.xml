@@ -1,113 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Rede Geodésica Nacional - região de Setúbal -->
 <rgn>
-  <vg>
-    <name>Test</name>
-    <order>order1</order>
+<vg>
+  <name>Figueirinha</name>
+    <order>Beach</order>
     <type>BOLEMBREANO S/ DEPÓSITO</type>
     <altitude>3.63</altitude>
-    <latitude>38.661</latitude>
-    <longitude>-9.2044</longitude>
-    <location> </location>
-    <schedule> </schedule>
+    <latitude>38.48427990257309</latitude>
+    <longitude>-8.944774803569707</longitude>
+    <location>Setúbal</location>
+    <schedule>24 hours</schedule>
     <phone> </phone>
     <link> </link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+</vg>
+<vg>
+  <name>Praia de Faro</name>
+    <order>Beach</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>37.0078596308766</latitude>
+    <longitude>-7.994496058910716</longitude>
+    <location>Faro</location>
+    <schedule>24 hours</schedule>
+    <phone> </phone>
+    <link> </link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+</vg>
+<vg>
+  <name>Meo Sudoeste</name>
+    <order>Festival</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>37.55408338607053</latitude>
+    <longitude>-8.73130047423466</longitude>
+    <location>São Teotónio, Beja</location>
+    <schedule>Fechado</schedule>
+    <phone> </phone>
+    <link>http://sudoeste.meo.pt/</link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+    <name>Torre de Belém</name>
+    <order>Monument</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.691751161212814</latitude>
+    <longitude>-9.215891472341497</longitude>
+    <location>Lisboa</location>
+    <schedule>10:00-17:30</schedule>
+    <phone>213 620 034</phone>
+    <link>http://www.torrebelem.pt/</link>
     <tags>
       <tag>Restaurant</tag>
       <tag>Museu</tag>
     </tags>
   </vg>
   <vg>
-  <name>Test</name>
-    <order>Restaurant</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
-    <altitude>3.63</altitude>
-    <latitude>38.661</latitude>
-    <longitude>-9.2055</longitude>
-    <location> </location>
-    <schedule> </schedule>
-    <phone> </phone>
-    <link> </link>
-    <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
-    </tags>
-  </vg>
-  <vg>
-  <name>Test</name>
-    <order>Other</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
-    <altitude>3.63</altitude>
-    <latitude>38.700</latitude>
-    <longitude>-9.2044</longitude>
-    <location> </location>
-    <schedule> </schedule>
-    <phone> </phone>
-    <link> </link>
-    <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
-    </tags>
-  </vg>
-  <vg>
-  <name>Test</name>
-    <order>Beach</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
-    <altitude>3.63</altitude>
-    <latitude>38.800</latitude>
-    <longitude>-9.2044</longitude>
-    <location> </location>
-    <schedule> </schedule>
-    <phone> </phone>
-    <link> </link>
-    <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
-    </tags>
-  </vg>
-  <vg>
-  <name>Test</name>
-    <order>Festival</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
-    <altitude>3.63</altitude>
-    <latitude>38.700</latitude>
-    <longitude>-9.1999</longitude>
-    <location> </location>
-    <schedule> </schedule>
-    <phone> </phone>
-    <link> </link>
-    <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
-    </tags>
-  </vg>
-  <vg>
-  <name>Test</name>
-    <order>Hotel</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
-    <altitude>3.63</altitude>
-    <latitude>38.600</latitude>
-    <longitude>-9.2044</longitude>
-    <location>Leiria</location>
-    <schedule>9:30 - 00:00</schedule>
-    <phone>917898400</phone>
-    <link>www.pratocheio.pt</link>
-    <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
-    </tags>
-  </vg>
-  <vg>
-  <name>Test</name>
+    <name>Santuário de Cristo Rei</name>
     <order>Monument</order>
     <type>BOLEMBREANO S/ DEPÓSITO</type>
     <altitude>3.63</altitude>
-    <latitude>38.850</latitude>
-    <longitude>-9.2044</longitude>
-    <location> </location>
+    <latitude>38.67887977179776</latitude>
+    <longitude>-9.171347374193266</longitude>
+    <location>Almada</location>
+    <schedule>10:00-18:00</schedule>
+    <phone>212 751 000</phone>
+    <link>https://cristorei.pt/</link>
+    <tags>
+      <tag>Restaurant</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+    <name>Ponte 25 de abril</name>
+    <order>Monument</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.68983366298793</latitude>
+    <longitude>-9.177207062551853</longitude>
+    <location>Lisboa</location>
+    <schedule> </schedule>
+    <phone>212947920</phone>
+    <link>https://www.lusoponte.pt/</link>
+    <tags>
+      <tag>Restaurant</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+  <name>Museu Nacional dos Coches</name>
+    <order>Museum</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.69681509038669</latitude>
+    <longitude>-9.19839305884899</longitude>
+    <location>Lisboa</location>
+    <schedule>10:00-18:00</schedule>
+    <phone>210 492 400</phone>
+    <link>http://museudoscoches.gov.pt/pt/</link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+    <name>Serra da Arrábida</name>
+      <order>Nature</order>
+      <type>BOLEMBREANO S/ DEPÓSITO</type>
+      <altitude>3.63</altitude>
+      <latitude>38.50187892627756</latitude>
+      <longitude>-9.000858499284673</longitude>
+      <location>Setúbal</location>
+      <schedule> </schedule>
+      <phone> </phone>
+      <link> </link>
+      <tags>
+        <tag>Restaurante</tag>
+        <tag>Museu</tag>
+      </tags>
+  </vg>
+  <vg>
+    <name>Serra da Estrela</name>
+    <order>Nature</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>40.3231739443611</latitude>
+    <longitude>-7.61253803452765</longitude>
+    <location>Guarda</location>
     <schedule> </schedule>
     <phone> </phone>
     <link> </link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+    <name>Santuário de Fátima</name>
+    <order>Religion</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>39.63140424983922</latitude>
+    <longitude>-8.673157102993207</longitude>
+    <location>Santarém</location>
+    <schedule>24 hours</schedule>
+    <phone>249 539 600</phone>
+    <link>http://www.santuario-fatima.pt/portal/</link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+    <name>Brasão Cervejaria</name>
+    <order>Restaurant</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>41.149303557709224</latitude>
+    <longitude>-8.611825950987463</longitude>
+    <location>Porto</location>
+    <schedule>12:00-01:00</schedule>
+    <phone>934 158 672</phone>
+    <link>http://www.brasao.pt/</link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+    <name>Estádio José Alvalade</name>
+    <order>Sports</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.761363678940846</latitude>
+    <longitude>-9.16175270537576</longitude>
+    <location>Lisboa</location>
+    <schedule> </schedule>
+    <phone>217 516 000</phone>
+    <link>https://www.sporting.pt/</link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+    <name>Estádio da Luz</name>
+    <order>Sports</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.75275281416083</latitude>
+    <longitude>-9.184752545354609</longitude>
+    <location>Lisboa</location>
+    <schedule> </schedule>
+    <phone>707 200 100</phone>
+    <link>https://www.slbenfica.pt/pt-pt/loja/bilhetes/estadio-e-museu</link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+    <name>Estádio do Dragão</name>
+    <order>Sports</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>41.16195575566697</latitude>
+    <longitude>-8.583591002933742</longitude>
+    <location>Porto</location>
+    <schedule> </schedule>
+    <phone>225 070 500</phone>
+    <link>https://www.fcporto.pt/pt/clube/estadio-do-dragao</link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+    <name>Estádio Municipal de Braga</name>
+    <order>Sports</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>41.562115133574466</latitude>
+    <longitude>-8.430461616410177</longitude>
+    <location>Braga</location>
+    <schedule> </schedule>
+    <phone>253 206 860</phone>
+    <link>http://www.scbraga.pt/</link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+    <name>NOVA School of Science and Technology | FCT NOVA</name>
+    <order>Other</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.66133678770895</latitude>
+    <longitude>-9.204989493773375</longitude>
+    <location>Almada, Setúbal</location>
+    <schedule>24 hours</schedule>
+    <phone>212 948 300</phone>
+    <link>http://www.fct.unl.pt/</link>
     <tags>
       <tag>Restaurante</tag>
       <tag>Museu</tag>
