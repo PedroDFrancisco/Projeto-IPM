@@ -7,8 +7,10 @@ html {
 }
 
 body{
-    display: inline-block;
+    display: flex;
     width:100%;
+    height: 100%;
+    margin: 0;
 }
 
 .mainpage{
@@ -33,5 +35,35 @@ nav .logo_img {
 }
 
 .sidebar{
+    background-image: url("/images/loginbackground.png");
     width: 30%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
+.sidebar h1{
+    color: white;
+    font-size: 37px;
+}
+
+.sidebar p{
+    color: white;
+    font-size: 20px;
+}
+.signin{
+    background-color: white; 
+    border: none;
+    color: #003366;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor:pointer;
+}
+
+
+
