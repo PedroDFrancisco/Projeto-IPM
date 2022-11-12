@@ -1,0 +1,39 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.profilePic {
+    position: absolute;
+    display: block;
+    margin-top: 230px;
+    text-align: center;
+    left: 50%;
+    width: 10%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+}
+.backgroundImg{
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+}
+.lowerMenu {
+    padding-top: 315px;
+    background-color: #F5F5F5;
+    height: 100vh;
+}
+.lowerMenu .userName{
+    text-align: center;
+    font-size: 22px;
+    color: #47525E;
+}
+.lowerMenu .follows{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #777777;
+}
