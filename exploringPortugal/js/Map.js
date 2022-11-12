@@ -19,7 +19,7 @@ const RESOURCES_DIR =
 	"resources/";
 const pointTypes = ["vg"]
 const VG_ORDERS =
-	["order1", "order2", "order3", "order4"];
+	["Beach", "Festival", "Hotel", "Monument", "Museum", "Nature", "Religion", "Restaurant", "Sports", "Other"];
 const RGN_FILE_NAME =
 	"rgn.xml";
 
@@ -86,6 +86,11 @@ class VG extends POI {
 		super (xml);
 		this.altitude = getFirstValueByTagName(xml, "altitude");
 		this.type = getFirstValueByTagName(xml, "type");
+		this.order = getFirstValueByTagName(xml, "order");
+		this.location = getFirstValueByTagName(xml, "location");
+		this.schedule = getFirstValueByTagName(xml, "schedule");
+		this.phone = getFirstValueByTagName(xml, "phone");
+		this.link = getFirstValueByTagName(xml, "link");
 		this.visible = true;
 		this.circle = this.createCircle ();
 	}
@@ -109,6 +114,19 @@ class VG extends POI {
 
 	getCircle () {
 		return this.circle;
+	}
+
+	popMessage () {
+		return "<b>" + this.name + "</b>" + "<br>" +
+		"Category: " + this.order + "<br>" +
+		"Location: " + this.location + "<br>" +
+		"Schedule: " + this.schedule + "<br>" +
+		"Phone: " + this.phone + "<br>" +
+		"Website: " + this.link + 
+		"<br> <INPUT TYPE=\"button\" ID=\"Same Order\" VALUE=\"Mesma ordem\" " + 
+		"ONCLICK=\"sameOrder(" + this.order + ")\">" +
+		"<br> <INPUT TYPE=\"button\" ID=\"Street View\" VALUE=\"Street View\" " +
+		"ONCLICK=\"changeToGoogleStreetView(" + this.latitude + "," + this.longitude + ")\">";
 	}
 }
 
@@ -272,7 +290,7 @@ class Map {
 		let iconOptions = {
 			iconUrl: "??",
 			shadowUrl: "??",
-			iconSize: [16, 16],
+			iconSize: [65, 70],
 			shadowSize: [16, 16],
 			iconAnchor: [8, 8],
 			shadowAnchor: [8, 8],
@@ -293,10 +311,10 @@ class Map {
 			alert("Empty file");
 		else {
 			for(let i = 0 ; i < xs.length ; i++) {
-				let order = getFirstValueByTagName (xs[i], "order");
+				//let order = getFirstValueByTagName (xs[i], "order");
 				let circle = null;
-				let vg;
-				switch (order) {
+				let vg = new VG(xs[i]);
+				/*switch (order) {
 					case "1":
 						vg = new VG1 (xs[i], order);
 						break;
@@ -308,7 +326,7 @@ class Map {
 						break;
 					default:
 						vg = new VG4 (xs[i], order);
-				}
+				}*/
 				vgs.push(vg);
 			}
 		}
@@ -343,7 +361,7 @@ class Map {
 	}
 
 	addMarker(icons, vg) {
-		let marker = L.marker([vg.latitude, vg.longitude], {icon: icons['order'+vg.order]}); 
+		let marker = L.marker([vg.latitude, vg.longitude], {icon: icons[vg.order]}); 
 		marker.bindPopup(vg.popMessage()).bindTooltip(vg.name);
 		this.clusterPointsGroup.addLayer(marker);
 		this.markers.push (marker);
@@ -495,7 +513,7 @@ class Map {
 function onLoad()
 {
 	map = new Map(MAP_CENTRE, 12);
-	map.addCircle(MAP_CENTRE, 100, "FCT/UNL");
+	//map.addCircle(MAP_CENTRE, 100, "FCT/UNL");
 	map.createEvents();
 	//map.stats();
 }

@@ -1,7 +1,8 @@
 .side-menu {
     margin-top: 80px;
     position: absolute;
-    height: 100%;
+    /*height: 100%;*/
+    height: -webkit-fill-available;
     width: 30%;
     background-color: #C8E7FF;
     text-align: center;
@@ -42,9 +43,20 @@
     align-items: center;
     height: 63%;
     cursor: pointer;
+    justify-content: space-between;
+    margin: 0px 10px;
 }
 
-.side-menu .filter-wrapper .filter .filter-image {
+.side-menu .filter-wrapper .filter .filter-image-text-wrapper {
+    display: flex;
+    align-items: center;
+    /*height: 63%;
+    cursor: pointer;
+    justify-content: space-between;
+    margin: 0px 10px;*/
+}
+
+.side-menu .filter-wrapper .filter .filter-image-text-wrapper .filter-image {
     height: 50px;
 }
 
@@ -90,4 +102,12 @@
     font-size: 16px;
     border-radius: 30px;
     cursor:pointer;
+}
+
+.leaflet-popup-content {
+    text-align: center;
+}
+
+.leaflet-popup-content b {
+    font-size: 20px;
 }

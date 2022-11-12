@@ -3,31 +3,35 @@ const BASE_FILTERS = ["order1", "order2", "order3", "order4"];
 
 function Filter() {
     let div = document.getElementById('filter-wrapper');
-    console.log(div);
+    //console.log(div);
 
-    for(let i = 0; i < BASE_FILTERS.length; i++) {
+    for(let i = 0; i < VG_ORDERS.length; i++) {
         let row = document.createElement('div');
-        row.className = "filter " + BASE_FILTERS[i];
+        row.className = "filter " + VG_ORDERS[i];
 
         let checkbox = document.createElement('input');
         checkbox.className = "filter checkbox";
         checkbox.type = "checkbox";
         checkbox.checked = true;
-        checkbox.id = i+1;
+        checkbox.id = VG_ORDERS[i];
         checkbox.addEventListener("click", function () {
                     checkboxUpdate(this);
         });
 
+        let imgtext = document.createElement('div');
+        imgtext.className = "filter-image-text-wrapper";
+
         let img = document.createElement('img');
         img.className = "filter-image";
-        img.src = IMG_DIR + BASE_FILTERS[i] + ".png";
+        img.src = IMG_DIR + VG_ORDERS[i] + ".png";
 
         let text = document.createElement("p");
         text.className = "filter-text";
-        text.innerHTML = BASE_FILTERS[i];
+        text.innerHTML = VG_ORDERS[i];
         
-        row.appendChild(img);
-        row.appendChild(text);
+        imgtext.appendChild(img);
+        imgtext.appendChild(text);
+        row.appendChild(imgtext);
         row.appendChild(checkbox);
         div.appendChild(row);
     }

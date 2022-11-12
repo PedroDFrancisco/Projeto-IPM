@@ -3,15 +3,114 @@
 <rgn>
   <vg>
     <name>Test</name>
-    <order>1</order>
+    <order>order1</order>
     <type>BOLEMBREANO S/ DEPÓSITO</type>
     <altitude>3.63</altitude>
     <latitude>38.661</latitude>
     <longitude>-9.2044</longitude>
+    <location> </location>
+    <schedule> </schedule>
+    <phone> </phone>
+    <link> </link>
+    <tags>
+      <tag>Restaurant</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+  <name>Test</name>
+    <order>Restaurant</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.661</latitude>
+    <longitude>-9.2055</longitude>
+    <location> </location>
+    <schedule> </schedule>
+    <phone> </phone>
+    <link> </link>
     <tags>
       <tag>Restaurante</tag>
       <tag>Museu</tag>
     </tags>
   </vg>
-  
+  <vg>
+  <name>Test</name>
+    <order>Other</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.700</latitude>
+    <longitude>-9.2044</longitude>
+    <location> </location>
+    <schedule> </schedule>
+    <phone> </phone>
+    <link> </link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+  <name>Test</name>
+    <order>Beach</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.800</latitude>
+    <longitude>-9.2044</longitude>
+    <location> </location>
+    <schedule> </schedule>
+    <phone> </phone>
+    <link> </link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+  <name>Test</name>
+    <order>Festival</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.700</latitude>
+    <longitude>-9.1999</longitude>
+    <location> </location>
+    <schedule> </schedule>
+    <phone> </phone>
+    <link> </link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+  <name>Test</name>
+    <order>Hotel</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.600</latitude>
+    <longitude>-9.2044</longitude>
+    <location>Leiria</location>
+    <schedule>9:30 - 00:00</schedule>
+    <phone>917898400</phone>
+    <link>www.pratocheio.pt</link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
+  <vg>
+  <name>Test</name>
+    <order>Monument</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <altitude>3.63</altitude>
+    <latitude>38.850</latitude>
+    <longitude>-9.2044</longitude>
+    <location> </location>
+    <schedule> </schedule>
+    <phone> </phone>
+    <link> </link>
+    <tags>
+      <tag>Restaurante</tag>
+      <tag>Museu</tag>
+    </tags>
+  </vg>
 </rgn>
