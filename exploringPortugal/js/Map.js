@@ -29,7 +29,6 @@ const RGN_FILE_NAME =
 let map = null;
 
 
-
 /* USEFUL FUNCTIONS */
 
 // Capitalize the first letter of a string.
@@ -84,36 +83,20 @@ class POI {
 class VG extends POI {
 	constructor(xml) {
 		super (xml);
-		this.altitude = getFirstValueByTagName(xml, "altitude");
-		this.type = getFirstValueByTagName(xml, "type");
 		this.order = getFirstValueByTagName(xml, "order");
 		this.location = getFirstValueByTagName(xml, "location");
 		this.schedule = getFirstValueByTagName(xml, "schedule");
 		this.phone = getFirstValueByTagName(xml, "phone");
 		this.link = getFirstValueByTagName(xml, "link");
 		this.visible = true;
-		this.circle = this.createCircle ();
-	}
 
-	createCircle () {
-		let alt;
-		if (this.altitude == "ND")
-			alt = 0;
-		else 
-			alt = parseInt(this.altitude);
-
-		return L.circle([parseFloat(this.latitude), parseFloat(this.longitude)],
-			   			alt * 2,
-			    		{color: 'red', fillColor: 'pink', fillOpacity: 0.4}
-		);
+		this.tags = getAllValuesByTagName(xml, "tags")[0];
+        this.tags = getAllValuesByTagName(this.tags, "tag")[0].childNodes[0].nodeValue;
+        console.log(this.tags);
 	}
 
 	isVisible () {
 		return this.visible;
-	}
-
-	getCircle () {
-		return this.circle;
 	}
 
 	popMessage () {
@@ -130,109 +113,6 @@ class VG extends POI {
 	}
 }
 
-class VG1 extends VG {
-	constructor (xml, order) {
-		super (xml);
-        //this.tags = getFirstValueByTagName(xml, "tags");
-        this.tags = getAllValuesByTagName(xml, "tags")[0];
-        this.tags = getAllValuesByTagName(this.tags, "tag")[0].childNodes[0].nodeValue;
-        console.log(this.tags);
-		this.order = order;
-		this.nearVG1 = 0;
-	}
-
-	checkDistance (distance) {
-		return distance >= 30000 && distance <= 60000;
-	}
-
-	popMessage () {
-		return "I'm the marker of VG <b>" + this.name + "</b>." + "<br>" +
-		"Latitude: " + this.latitude + "<br>" +
-		"Longitude: " + this.longitude + "<br>" +
-		"Altitude: " + this.altitude + "<br>" +
-		"Ordem: " + this.order + "<br>" +
-		"Tipo: " + this.type + "<br>" + 
-		"VGs de ordem 1 num raio de 60 km: " + this.nearVG1 +
-		"<br> <INPUT TYPE=\"button\" ID=\"Same Order\" VALUE=\"Mesma ordem\" " + 
-		"ONCLICK=\"sameOrder(" + this.order + ")\">" +
-		"<br> <INPUT TYPE=\"button\" ID=\"Street View\" VALUE=\"Street View\" " +
-		"ONCLICK=\"changeToGoogleStreetView(" + this.latitude + "," + this.longitude + ")\">";
-	}
-}
-
-class VG2 extends VG {
-	constructor (xml, order) {
-		super (xml);
-		this.order = order;
-	}
-
-	checkDistance (distance) {
-		return distance >= 20000 && distance <= 30000;
-	}
-
-	popMessage () {
-		return "I'm the marker of VG <b>" + this.name + "</b>." + "<br>" +
-		"Latitude: " + this.latitude + "<br>" +
-		"Longitude: " + this.longitude + "<br>" +
-		"Altitude: " + this.altitude + "<br>" +
-		"Ordem: " + this.order + "<br>" +
-		"Tipo: " + this.type +
-		"<br> <INPUT TYPE=\"button\" ID=\"Same Order\" VALUE=\"Mesma ordem\" " + 
-		"ONCLICK=\"sameOrder(" + this.order + ")\">" +
-		"<br> <INPUT TYPE=\"button\" ID=\"Street View\" VALUE=\"Street View\" " +
-		"ONCLICK=\"changeToGoogleStreetView(" + this.latitude + "," + this.longitude + ")\">" +
-		"<br> <INPUT TYPE=\"button\" ID=\"NearVGs3\" VALUE=\"VGs de ordem 3 até 30 km\" " + 
-		"ONCLICK=\"nearVG3(" + this.latitude + "," + this.longitude + ")\">";
-	}
-}
-
-class VG3 extends VG {
-	constructor (xml, order) {
-		super (xml);
-		this.order = order;
-	}
-
-	checkDistance (distance) {
-		return distance >= 5000 && distance <= 10000;
-	}
-
-	popMessage () {
-		return "I'm the marker of VG <b>" + this.name + "</b>." + "<br>" +
-		"Latitude: " + this.latitude + "<br>" +
-		"Longitude: " + this.longitude + "<br>" +
-		"Altitude: " + this.altitude + "<br>" +
-		"Ordem: " + this.order + "<br>" +
-		"Tipo: " + this.type +
-		"<br> <INPUT TYPE=\"button\" ID=\"Same Order\" VALUE=\"Mesma ordem\" " + 
-		"ONCLICK=\"sameOrder(" + this.order + ")\">" +
-		"<br> <INPUT TYPE=\"button\" ID=\"Street View\" VALUE=\"Street View\" " +
-		"ONCLICK=\"changeToGoogleStreetView(" + this.latitude + "," + this.longitude + ")\">";
-	}
-}
-
-class VG4 extends VG {
-	constructor (xml, order) {
-		super (xml);
-		this.order = order;
-	}
-
-	checkDistance (distance) {
-		return true;
-	}
-
-	popMessage () {
-		return "I'm the marker of VG <b>" + this.name + "</b>." + "<br>" +
-		"Latitude: " + this.latitude + "<br>" +
-		"Longitude: " + this.longitude + "<br>" +
-		"Altitude: " + this.altitude + "<br>" +
-		"Ordem: " + this.order + "<br>" +
-		"Tipo: " + this.type +
-		"<br> <INPUT TYPE=\"button\" ID=\"Same Order\" VALUE=\"Mesma ordem\" " + 
-		"ONCLICK=\"sameOrder(" + this.order + ")\">" +
-		"<br> <INPUT TYPE=\"button\" ID=\"Street View\" VALUE=\"Street View\" " +
-		"ONCLICK=\"changeToGoogleStreetView(" + this.latitude + "," + this.longitude + ")\">";
-	}
-}
 
 /* MAP */
 
@@ -242,18 +122,15 @@ class Map {
 		this.addBaseLayers(MAP_LAYERS);
 		let icons = this.loadIcons(RESOURCES_DIR);
 		this.vgs = this.loadRGN(RESOURCES_DIR + RGN_FILE_NAME);
-		this.countVG1 ();
 		this.markers = [];
 		this.clusterPointsGroup = null;
 		this.clusterCirclesGroup = null;
 		this.populate(icons, this.vgs);
-		this.addClickHandler(e =>
+		/*this.addClickHandler(e =>
 			L.popup()
 			.setLatLng(e.latlng)
 			.setContent("You clicked the map at " + e.latlng.toString())
-		);
-		this.circles = [];
-		this.circlesActivated = false;
+		);*/
 	}
 
 	makeMapLayer(name, spec) {
@@ -294,7 +171,7 @@ class Map {
 			shadowSize: [16, 16],
 			iconAnchor: [8, 8],
 			shadowAnchor: [8, 8],
-			popupAnchor: [0, -6] // offset the determines where the popup should open
+			popupAnchor: [25, -0] // offset the determines where the popup should open
 		};
 		for(let i = 0 ; i < VG_ORDERS.length ; i++) {
 			iconOptions.iconUrl = dir + VG_ORDERS[i] + ".png";
@@ -333,23 +210,6 @@ class Map {
 		return vgs;
 	}
 
-	countVG1 () {
-		for(let i = 0 ; i < this.vgs.length ; i++) {
-			if (this.vgs[i].order == "1") {
-				for(let j = 0 ; j < this.vgs.length ; j++) {
-					if (i != j && this.vgs[j].order == "1") {
-						let dist = haversine(this.vgs[i].latitude, this.vgs[i].longitude,
-							  			     this.vgs[j].latitude, this.vgs[j].longitude);
-					
-						if (dist <= 60) {
-							this.vgs[i].nearVG1++;
-						}
-					}
-				}
-			}
-		}
-	}
-
 	populate(icons, vgs)  {
 		this.clusterPointsGroup = L.markerClusterGroup({chunkedLoading: true});
 		this.clusterCirclesGroup = L.markerClusterGroup({chunkedLoading: true});
@@ -362,7 +222,7 @@ class Map {
 
 	addMarker(icons, vg) {
 		let marker = L.marker([vg.latitude, vg.longitude], {icon: icons[vg.order]}); 
-		marker.bindPopup(vg.popMessage()).bindTooltip(vg.name);
+		marker.bindPopup(vg.popMessage())//.bindTooltip(vg.name);
 		this.clusterPointsGroup.addLayer(marker);
 		this.markers.push (marker);
 	}
@@ -373,18 +233,6 @@ class Map {
 			return handler(e).openOn(m);
 		}
 		return this.lmap.on('click', handler2);
-	}
-
-	addCircle(pos, radius, popup) {
-		let circle =
-			L.circle(pos,
-				radius,
-				{color: 'red', fillColor: 'pink', fillOpacity: 0.4}
-			);
-		circle.addTo(this.lmap);
-		if( popup != "" )
-			circle.bindPopup(popup);
-		return circle;
 	}
 
 	removeOrdIcons(order) {
@@ -398,7 +246,6 @@ class Map {
 				}
 			}		
 		}
-		//this.stats ();
 	}
 
 	addOrdIcons(order) {
@@ -412,110 +259,21 @@ class Map {
 				}
 			}		
 		}
-		//this.stats ();
-	}
-	
-	stats () {
-		let sttag = document.getElementById("visible_caches");
-		
-		let bounds = map.lmap.getBounds();
-		
-		let w = bounds.getWest();
-		let s = bounds.getSouth();
-		let e = bounds.getEast();
-		let n = bounds.getNorth();
-		
-		let points = [];
-
-		let highestPoint = {
-			alt  : 0,
-			name : ""
-		};
-		let lowestPoint = {
-			alt  : 999999999,
-			name : ""
-		};
-		let vgsOrd1 = 0;
-		let vgsOrd2 = 0;
-		let vgsOrd3 = 0;
-		let vgsOrd4 = 0;
-
-		for (let i = 0; i < map.vgs.length; i++) {
-			let vg = map.vgs[i];
-			
-			let vgLat = parseFloat(vg.latitude);
-			let vglong = parseFloat(vg.longitude);
-
-			if (vgLat >= s && vgLat <= n && vglong >= w && vglong <= e && vg.isVisible()) {
-					points.push(vg);
-
-					let altitude = parseFloat(vg.altitude);
-
-					if (altitude > highestPoint.alt) {
-						highestPoint.alt = altitude;
-						highestPoint.name = vg.name;
-					}
-
-					if (altitude < lowestPoint.alt) {
-						lowestPoint.alt = altitude;
-						lowestPoint.name = vg.name; 
-					}
-
-					switch (vg.order) {
-						case "1":
-							vgsOrd1++;
-							break;
-						case "2":
-							vgsOrd2++;
-							break;
-						case "3":
-							vgsOrd3++;
-							break;
-						default:
-							vgsOrd4++;
-					}
-				}
-		}
-
-		sttag.innerHTML = 
-		"<br>" + "VGs visíveis   : " + points.length +
-		"<br>" + 
-		"<br>" + "VGs de ordem 1 : " + vgsOrd1 +
-		"<br>" + "VGs de ordem 2 : " + vgsOrd2 +
-		"<br>" + "VGs de ordem 3 : " + vgsOrd3 +
-		"<br>" + "VGs de ordem 4 : " + vgsOrd4 +
-		"<br>" + 
-		"<br>" + "Altitude máxima: " + highestPoint.alt + 
-		"<br>" + "(" + highestPoint.name + ")" +
-		"<br>" +
-		"<br>" + "Altitude mínima: " + lowestPoint.alt + 
-		"<br>" + "(" + lowestPoint.name + ") ";
-	}
-
-	removePointsCircles () {
-		if (map.circlesActivated) {
-			map.circlesActivated = false;
-
-			for (let i = 0; i < map.vgs.length; i++) {
-				map.clusterCirclesGroup.removeLayer(map.vgs[i].getCircle());
-			}
-		}
 	}
 
 	createEvents() {
 		//this.lmap.on("zoomend layerremove moveend", this.stats);
-		this.lmap.on("click", this.removePointsCircles);
+		//this.lmap.on("click", this.removePointsCircles);
 	}
 }
+
 
 /* FUNCTIONS for HTML */
 
 function onLoad()
 {
 	map = new Map(MAP_CENTRE, 12);
-	//map.addCircle(MAP_CENTRE, 100, "FCT/UNL");
 	map.createEvents();
-	//map.stats();
 }
 
 function checkboxUpdate (checkbox) {
@@ -527,72 +285,6 @@ function checkboxUpdate (checkbox) {
 	}
 }
 
-function validateVgs () {
-	let invalidVgs = [];
-
-	for (let i = 0; i < map.markers.length; i++) {
-		let order = map.vgs[i].order;
-		let coords1 = map.markers[i].getLatLng();
-		let invalid = false;
-
-		for (let j = i+1 ; j < map.markers.length; j++) {
-			if (map.vgs[j].order == order) {
-				let coords2 = map.markers[j].getLatLng();
-				let distance = map.lmap.distance(coords1, coords2);
-				if (map.vgs[i].checkDistance(distance)) {
-					invalid = true;
-					break;
-				}
-			}
-		}
-
-		if (!invalid) {
-			invalidVgs.push(map.vgs[i]);
-		}
-	}
-
-	msg = "";
-	for (let i = 0; i < invalidVgs.length; i++) {
-		msg += "Nome: " + invalidVgs[i].name + "\nOrdem :" + invalidVgs[i].order + "\n\n";
-	}
-
-	alert(msg);
-}
-
-function vgsAltitude () {
-	for (let i = 0; i < map.vgs.length; i++) {
-		if (map.clusterPointsGroup.hasLayer(map.markers[i])) {
-			map.clusterCirclesGroup.addLayer(map.vgs[i].getCircle());
-			map.circlesActivated = true;
-		}
-	}
-}
-
-function sameOrder (order) {
-	for (let i = 0; i < map.vgs.length; i++) {
-		if (map.vgs[i].order == order) {
-			map.clusterCirclesGroup.addLayer(map.vgs[i].getCircle());
-			map.circlesActivated = true;
-		}	
-	}
-}
-
 function changeToGoogleStreetView(lat, long) {
 	document.location = "http://maps.google.com/maps?q=&layer=c&cbll=" + lat + "," + long;
-}
-
-function nearVG3(lat, long) {
-	for (let i = 0; i < map.vgs.length; i++) {
-		if (map.vgs[i].order == "2" && 
-			lat != map.vgs[i].latitude && 
-			long != map.vgs[i].longitude) {
-			dist = haversine (lat, long, map.vgs[i].latitude, map.vgs[i].longitude);
-
-			if (dist <= 30) {
-				map.vgs[i].addCircle();
-			}
-		}
-	}
-
-	map.circlesActivated = true;
 }
