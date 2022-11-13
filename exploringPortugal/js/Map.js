@@ -168,10 +168,10 @@ class Map {
 			iconUrl: "??",
 			shadowUrl: "??",
 			iconSize: [65, 70],
-			shadowSize: [16, 16],
-			iconAnchor: [8, 8],
+			// shadowSize: [16, 16],
+			iconAnchor: [65/2, 50],
 			shadowAnchor: [8, 8],
-			popupAnchor: [25, -0] // offset the determines where the popup should open
+			popupAnchor: [0, -40] // offset the determines where the popup should open
 		};
 		for(let i = 0 ; i < VG_ORDERS.length ; i++) {
 			iconOptions.iconUrl = dir + VG_ORDERS[i] + ".png";
