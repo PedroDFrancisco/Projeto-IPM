@@ -126,11 +126,11 @@ class Map {
 		this.clusterPointsGroup = null;
 		this.clusterCirclesGroup = null;
 		this.populate(icons, this.vgs);
-		/*this.addClickHandler(e =>
+		this.addClickHandler(e =>
 			L.popup()
 			.setLatLng(e.latlng)
 			.setContent("You clicked the map at " + e.latlng.toString())
-		);*/
+		);
 	}
 
 	makeMapLayer(name, spec) {
