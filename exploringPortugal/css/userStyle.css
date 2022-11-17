@@ -23,8 +23,9 @@ html {
 }
 .lowerMenu {
     padding-top: 315px;
+    padding-bottom: 20px;
     background-color: #F5F5F5;
-    height: 100vh;
+    border-bottom: 1px solid #BEBEBE;
 }
 .lowerMenu .userName{
     text-align: center;
@@ -36,4 +37,56 @@ html {
     text-align: center;
     font-size: 18px;
     color: #777777;
+}
+
+.lowerMenu ul{
+    margin-left: 55px;
+    margin-top: 20px;
+    flex: 1;
+    text-align: center;
+}
+.lowerMenu ul li{
+    font-size: 20px;
+    display: inline-block;
+    list-style: none;
+    margin: 0 70px;
+}
+.lowerMenu ul li a{
+    text-decoration: none;
+    color: #47525E; /*#003366*/
+}
+
+.container {
+    text-align: center;
+}
+
+.container .follow{
+    background-color: #003366; 
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor:pointer;
+    margin-top: 15px;
+}
+
+.posts {
+    height: 400px;
+    background-color: #F5F5F5;
+}
+
+.noPosts {
+    margin-top: 30px;
+    text-align: center;
+    width: 150px;
+    filter: invert(28%) sepia(14%) saturate(575%) hue-rotate(171deg) brightness(100%) contrast(89%);
+}
+
+.noPostsYet {
+    font-size: 20px;
+    color: #47525E;
 }
