@@ -1,5 +1,6 @@
 const IMG_DIR = "resources/";
 const BASE_FILTERS = ["order1", "order2", "order3", "order4"];
+var add_lat_long = false;
 
 function Filter() {
     let div = document.getElementById('filter-wrapper');
@@ -35,4 +36,11 @@ function Filter() {
         row.appendChild(checkbox);
         div.appendChild(row);
     }
+
+    let marker_pos = document.getElementById('add-lat-long');
+
+    marker_pos.addEventListener("click", function () {
+        add_lat_long = !add_lat_long;
+        marker_pos.placeholder = "Click Map";
+    });
 }
