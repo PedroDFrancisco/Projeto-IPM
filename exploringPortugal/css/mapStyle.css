@@ -104,6 +104,10 @@
     cursor:pointer;
 }
 
+.add-marker.create{
+    display: none;
+}
+
 .leaflet-popup-content {
     text-align: center;
 }

@@ -91,8 +91,8 @@ class VG extends POI {
 		this.visible = true;
 
 		this.tags = getAllValuesByTagName(xml, "tags")[0];
-        this.tags = getAllValuesByTagName(this.tags, "tag")[0].childNodes[0].nodeValue;
-        console.log(this.tags);
+        //this.tags = getAllValuesByTagName(this.tags, "tag")[0].childNodes[0].nodeValue;
+        //console.log(this.tags);
 	}
 
 	isVisible () {
@@ -113,6 +113,40 @@ class VG extends POI {
 	}
 }
 
+class NormVG {
+	constructor(name, lat, long, order, location, schedule, phone, link, tags) {
+		this.name = name;
+		this.latitude = lat;
+		this.longitude = long;
+		this.order = order;
+		this.location = location;
+		this.schedule = schedule;
+		this.phone = phone;
+		this.link = link;
+		this.visible = true;
+
+		this.tags = tags;
+        //this.tags = getAllValuesByTagName(this.tags, "tag")[0].childNodes[0].nodeValue;
+        //console.log(this.tags);
+	}
+
+	isVisible () {
+		return this.visible;
+	}
+
+	popMessage () {
+		return "<b>" + this.name + "</b>" + "<br>" +
+		"Category: " + this.order + "<br>" +
+		"Location: " + this.location + "<br>" +
+		"Schedule: " + this.schedule + "<br>" +
+		"Phone: " + this.phone + "<br>" +
+		"Website: " + this.link + 
+		"<br> <INPUT TYPE=\"button\" ID=\"Same Order\" VALUE=\"Mesma ordem\" " + 
+		"ONCLICK=\"sameOrder(" + this.order + ")\">" +
+		"<br> <INPUT TYPE=\"button\" ID=\"Street View\" VALUE=\"Street View\" " +
+		"ONCLICK=\"changeToGoogleStreetView(" + this.latitude + "," + this.longitude + ")\">";
+	}
+}
 
 /* MAP */
 
@@ -264,6 +298,20 @@ class Map {
 	createEvents() {
 		//this.lmap.on("zoomend layerremove moveend", this.stats);
 		//this.lmap.on("click", this.removePointsCircles);
+		this.lmap.on("click", function(pos) {
+			if(add_lat_long) {
+				let marker_pos = document.getElementById('add-lat-long');
+				marker_pos.value = pos.latlng.lat + " " + pos.latlng.lng;
+				add_lat_long = false;
+				//console.log(pos.latlng.lat + " " + pos.latlng.lng);
+				//this.map.setLatLng(this.latlng);
+				//console.log(pos.latlng.toString());
+			}
+		});
+	}
+
+	getIcons() {
+		return this.loadIcons(RESOURCES_DIR);;
 	}
 }
 

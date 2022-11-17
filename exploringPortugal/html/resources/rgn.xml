@@ -4,7 +4,6 @@
 <vg>
   <name>Figueirinha</name>
     <order>Beach</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.48427990257309</latitude>
     <longitude>-8.944774803569707</longitude>
     <location>Setúbal</location>
@@ -12,14 +11,12 @@
     <phone> </phone>
     <link> </link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
 </vg>
 <vg>
   <name>Praia de Faro</name>
     <order>Beach</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>37.0078596308766</latitude>
     <longitude>-7.994496058910716</longitude>
     <location>Faro</location>
@@ -27,14 +24,12 @@
     <phone> </phone>
     <link> </link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
 </vg>
 <vg>
   <name>Meo Sudoeste</name>
     <order>Festival</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>37.55408338607053</latitude>
     <longitude>-8.73130047423466</longitude>
     <location>São Teotónio, Beja</location>
@@ -42,8 +37,7 @@
     <phone> </phone>
     <link>http://sudoeste.meo.pt/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -102,8 +96,7 @@
     <phone>210 492 400</phone>
     <link>http://museudoscoches.gov.pt/pt/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -132,8 +125,7 @@
     <phone> </phone>
     <link> </link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -147,8 +139,7 @@
     <phone>249 539 600</phone>
     <link>http://www.santuario-fatima.pt/portal/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -162,8 +153,7 @@
     <phone>934 158 672</phone>
     <link>http://www.brasao.pt/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -177,8 +167,7 @@
     <phone>217 516 000</phone>
     <link>https://www.sporting.pt/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -192,8 +181,7 @@
     <phone>707 200 100</phone>
     <link>https://www.slbenfica.pt/pt-pt/loja/bilhetes/estadio-e-museu</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -207,8 +195,7 @@
     <phone>225 070 500</phone>
     <link>https://www.fcporto.pt/pt/clube/estadio-do-dragao</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -222,8 +209,7 @@
     <phone>253 206 860</phone>
     <link>http://www.scbraga.pt/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -237,8 +223,7 @@
     <phone>212 948 300</phone>
     <link>http://www.fct.unl.pt/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -252,8 +237,7 @@
     <phone>266 769 450</phone>
     <link>http://www.cultura-alentejo.pt/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -267,8 +251,7 @@
     <phone>289 315 129</phone>
     <link>https://aquashowpark.com/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -282,8 +265,7 @@
     <phone>289 893 200</phone>
     <link>https://www.visitalgarve.pt/pt/233/estadio-algarve.aspx</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -297,8 +279,7 @@
     <phone>282 680 100</phone>
     <link>http://www.zoolagos.com/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -312,8 +293,7 @@
     <phone>284 310 350</phone>
     <link>http://www.ovibeja.pt/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -327,8 +307,7 @@
     <phone>239 801 170</phone>
     <link>https://www.fbb.pt/pp/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -342,8 +321,7 @@
     <phone>253 203 480</phone>
     <link>http://www.icnf.pt/portal/naturaclas/ap/pnpg</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -357,8 +335,7 @@
     <phone> </phone>
     <link>https://www.beachrex.com/en/portugal/setubal/carvalhal-beaches/praia-da-comporta</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -372,8 +349,7 @@
     <phone> </phone>
     <link>http://www.cm-nazare.pt/pt</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -387,8 +363,7 @@
     <phone>279 768 260</phone>
     <link>http://www.arte-coa.pt/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -402,8 +377,7 @@
     <phone>245 909 138</phone>
     <link>http://www.cm-marvao.pt/pt/museus/castelo</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -417,8 +391,7 @@
     <phone>211 107 600</phone>
     <link>https://www.sanahotels.com/pt/hotel/myriad-by-sana/</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -432,8 +405,7 @@
     <phone>917 898 400</phone>
     <link>www.h4.pt</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -447,8 +419,7 @@
     <phone>917 898 400</phone>
     <link>www.burger-prince.pt</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -462,8 +433,7 @@
     <phone>917 898 400</phone>
     <link>www.pratocheio.pt</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
   <vg>
@@ -477,8 +447,7 @@
     <phone>917 898 400</phone>
     <link>www.pratocheio.pt</link>
     <tags>
-      <tag>Restaurante</tag>
-      <tag>Museu</tag>
+      Pet-Friendly
     </tags>
   </vg>
 </rgn>
