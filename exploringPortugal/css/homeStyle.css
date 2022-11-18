@@ -178,6 +178,10 @@ footer{
     margin-left: 218px;
     margin-top: 55px;
   }
+
+  .subnav-content3 {
+    margin-left: 330px;
+  }
   
   /* Style the subnav links */
   .subnav-content a {
