@@ -25,7 +25,7 @@
         <SCRIPT TYPE="text/javascript" SRC="../js/Marker.js"></SCRIPT>
     </head>
 
-    <BODY ONLOAD="onLoad()">
+    <BODY ONLOAD="onLoad(); Filter(); loadAddMarker(); ">
 
         <div class="menu">
             <nav>
@@ -37,31 +37,33 @@
                     <div class="subnav">
                     <button class="subnavbtn">Regions <i class="fa fa-caret-down"></i></button>
                     <div class="subnav-content">
-                        <a href="?region=norte">Norte</a>
-                        <a href="#centro">Centro</a>
-                        <a href="#lisboa">Grande Lisboa</a>
-                        <a href="#alentejo">Alentejo</a>
-                        <a href="#algarve">Algarve</a>
-                        <a href="#madeira">Madeira</a>
-                        <a href="#acores">Açores</a>
+                        <div class="subnav-content1">
+                            <a href="?region=norte">North</a>
+                            <a href="?region=centro">Center</a>
+                            <a href="?region=lisboa">Lisbon</a>
+                            <a href="?region=alentejo">Alentejo</a>
+                            <a href="?region=algarve">Algarve</a>
+                            <a href="?region=madeira">Madeira</a>
+                            <a href="?region=acores">Açores</a>
+                        </div>  
                     </div>
                     </div>
                     <div class="subnav">
                     <button class="subnavbtn">Categories <i class="fa fa-caret-down"></i></button>
                     <div class="subnav-content">
                         <div class="subnav-content1">
-                            <a href="#beach">Beach</a>
-                            <a href="#festival">Festival</a>
-                            <a href="#hotel">Hotel</a>
-                            <a href="#monument">Monument</a>
-                            <a href="#museum">Museum</a>
-                            <a href="#nature">Nature</a>
+                            <a href="?category=Beach">Beach</a>
+                            <a href="?category=Festival">Festival</a>
+                            <a href="?category=Hotel">Hotel</a>
+                            <a href="?category=Monument">Monument</a>
+                            <a href="?category=Museum">Museum</a>
+                            <a href="?category=Nature">Nature</a>
                         </div>
                         <div class="subnav-content2">
-                            <a href="#religion">Religion</a>
-                            <a href="#restaurant">Restaurant</a>
-                            <a href="#sports">Sports</a>
-                            <a href="#other">Other</a>
+                            <a href="?category=Religion">Religion</a>
+                            <a href="?category=Restaurant">Restaurant</a>
+                            <a href="?category=Sports">Sports</a>
+                            <a href="?category=Other">Other</a>
                         </div>
                     </div>
                     </div>
@@ -98,33 +100,50 @@
                 <div class="close-wrapper" id="close-wrapper">
                     <p class="close-icon">&#10005;</p>
                 </div>
-                <div class="add-marker-text" >
-                    <p>Name</p>
-                    <input type="text" id="add-name" placeholder="">
-                </div>
-                <div class="add-marker-text">
-                    <p>location</p>
-                    <input type="text" id="add-location" placeholder="">
-                </div>
-                <div class="add-marker-text">
-                    <p>schedule</p>
-                    <input type="text" id="add-schedule" placeholder="">
-                </div>
-                <div class="add-marker-text">
-                    <p>Phone Number</p>
-                    <input type="text" id="add-phone" placeholder="">
-                </div>
-                <div class="add-marker-text">
-                    <p>Link</p>
-                    <input type="text" id="add-link" placeholder="">
-                </div>
-                <div class="add-marker-text">
-                    <p>Latitude & Longitude</p>
-                    <input type="text" id="add-lat-long" placeholder="Click Here">
-                </div>
-                <div class="add-marker-text">
-                    <p>Tags</p>
-                    <input type="text" id="add-tags" placeholder="">
+                <div class="add-marker-values">
+                    <div class="add-marker-text" >
+                        <p>Name</p>
+                        <input type="text" id="add-name" placeholder="">
+                    </div>
+                    <div class="add-marker-text">
+                        <p>Category</p>
+                        <select id="add-marker-category">
+                            <option value="Beach">Beach</option>
+                            <option value="Festival">Festival</option>
+                            <option value="Hotel">Hotel</option>
+                            <option value="Monument">Monument</option>
+                            <option value="Monument">Museum</option>
+                            <option value="Monument">Nature</option>
+                            <option value="Monument">Religion</option>
+                            <option value="Monument">Restaurant</option>
+                            <option value="Monument">Sports</option>
+                            <option value="Monument">Other</option>
+                        </select>
+                    </div>
+                    <div class="add-marker-text">
+                        <p>Location</p>
+                        <input type="text" id="add-location" placeholder="">
+                    </div>
+                    <div class="add-marker-text">
+                        <p>Schedule</p>
+                        <input type="text" id="add-schedule" placeholder="">
+                    </div>
+                    <div class="add-marker-text">
+                        <p>Phone Number</p>
+                        <input type="text" id="add-phone" placeholder="">
+                    </div>
+                    <div class="add-marker-text">
+                        <p>Link</p>
+                        <input type="text" id="add-link" placeholder="">
+                    </div>
+                    <div class="add-marker-text">
+                        <p>Latitude & Longitude</p>
+                        <input type="text" id="add-lat-long" placeholder="Click Here">
+                    </div>
+                    <div class="add-marker-text">
+                        <p>Tags</p>
+                        <input type="text" id="add-tags" placeholder="">
+                    </div>
                 </div>
             </div>
             <button class="add-marker" id="add-marker">Add marker</button>
@@ -134,7 +153,7 @@
 
         <div id="mapid" style="position: fixed; top: 80px; left: 30%; width: 70%; height: 91.5%;"></div>
     </BODY>
-    <script> Filter();
-            loadAddMarker();
+    <script defer> 
+            
             </script>
 </html>

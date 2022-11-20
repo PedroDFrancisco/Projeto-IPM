@@ -2,8 +2,12 @@
 
 const MAP_CENTRE =
 	[38.661,-9.2044];  // FCT coordinates
-const REGIONS =
-	{"norte" : [41.301977,-7.74669], "centro" : [40.175996,-7.915166], "lisboa" : [38.704895,-9.137148]};
+const REGIONS_CORD =
+	{"norte" : [41.301977,-7.74669], "centro" : [40.175996,-7.915166], "lisboa" : [38.704895,-9.137148],
+		"alentejo" : [38.158728,-7.893503], "algarve" : [37.099392, -8.154431], "madeira" : [32.945422, -16.708784], "acores" : [38.30361, -27.058975]};
+const REGIONS_ZOOM =
+	{"norte" : 9, "centro" : 9, "lisboa" : 11,
+		"alentejo" : 9, "algarve" : 9, "madeira" : 10, "acores" : 7};
 const MAP_ID =
 	"mapid";
 const MAP_ATTRIBUTION =
@@ -318,10 +322,9 @@ class Map {
 function onLoad()
 {
 	let urlParams = new URLSearchParams(window.location.search);
-  	let region = urlParams.get('region');
-  	console.log(region);  
+  	let region = urlParams.get('region');  
 	if(region != null) {
-		map = new Map(REGIONS[region], 9);
+		map = new Map(REGIONS_CORD[region], REGIONS_ZOOM[region]);
 	} else {
 		map = new Map(MAP_CENTRE, 5);
 	}
