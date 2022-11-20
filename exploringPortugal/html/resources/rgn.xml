@@ -10,9 +10,7 @@
     <schedule>24 hours</schedule>
     <phone> </phone>
     <link> </link>
-    <tags>
-      Pet-Friendly
-    </tags>
+    <tags>Pet-Friendly</tags>
 </vg>
 <vg>
   <name>Praia de Faro</name>
@@ -236,9 +234,7 @@
     <schedule>24 hours</schedule>
     <phone>266 769 450</phone>
     <link>http://www.cultura-alentejo.pt/</link>
-    <tags>
-      Pet-Friendly
-    </tags>
+    <tags>Pet-Friendly</tags>
   </vg>
   <vg>
     <name>AQUASHOW - Waterpark</name>

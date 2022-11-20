@@ -2,6 +2,8 @@
 
 const MAP_CENTRE =
 	[38.661,-9.2044];  // FCT coordinates
+const REGIONS =
+	{"norte" : [41.301977,-7.74669], "centro" : [40.175996,-7.915166], "lisboa" : [38.704895,-9.137148]};
 const MAP_ID =
 	"mapid";
 const MAP_ATTRIBUTION =
@@ -90,7 +92,7 @@ class VG extends POI {
 		this.link = getFirstValueByTagName(xml, "link");
 		this.visible = true;
 
-		this.tags = getAllValuesByTagName(xml, "tags")[0];
+		this.tags = getFirstValueByTagName(xml, "tags");
         //this.tags = getAllValuesByTagName(this.tags, "tag")[0].childNodes[0].nodeValue;
         //console.log(this.tags);
 	}
@@ -105,11 +107,9 @@ class VG extends POI {
 		"Location: " + this.location + "<br>" +
 		"Schedule: " + this.schedule + "<br>" +
 		"Phone: " + this.phone + "<br>" +
-		"Website: " + this.link + 
-		"<br> <INPUT TYPE=\"button\" ID=\"Same Order\" VALUE=\"Mesma ordem\" " + 
-		"ONCLICK=\"sameOrder(" + this.order + ")\">" +
-		"<br> <INPUT TYPE=\"button\" ID=\"Street View\" VALUE=\"Street View\" " +
-		"ONCLICK=\"changeToGoogleStreetView(" + this.latitude + "," + this.longitude + ")\">";
+		"Website: " + this.link + "<br>" +
+		"Tags: " + this.tags + "<br>" +
+		"<br> <a href= /exploringPortugal/html/locationsProfile.html>"+"<button>More Info</button>" +"</a>";
 	}
 }
 
@@ -141,10 +141,7 @@ class NormVG {
 		"Schedule: " + this.schedule + "<br>" +
 		"Phone: " + this.phone + "<br>" +
 		"Website: " + this.link + 
-		"<br> <INPUT TYPE=\"button\" ID=\"Same Order\" VALUE=\"Mesma ordem\" " + 
-		"ONCLICK=\"sameOrder(" + this.order + ")\">" +
-		"<br> <INPUT TYPE=\"button\" ID=\"Street View\" VALUE=\"Street View\" " +
-		"ONCLICK=\"changeToGoogleStreetView(" + this.latitude + "," + this.longitude + ")\">";
+		"<br> <a href= /exploringPortugal/html/locationsProfile.html"+"<button>More Info</button>" +"</a>";
 	}
 }
 
@@ -320,7 +317,15 @@ class Map {
 
 function onLoad()
 {
-	map = new Map(MAP_CENTRE, 5);
+	let urlParams = new URLSearchParams(window.location.search);
+  	let region = urlParams.get('region');
+  	console.log(region);  
+	if(region != null) {
+		map = new Map(REGIONS[region], 9);
+	} else {
+		map = new Map(MAP_CENTRE, 5);
+	}
+	
 	map.createEvents();
 }
 

@@ -18,26 +18,25 @@ html {
 nav{
     display: flex;
     align-items: center;
-    padding: 10px 3%;
+    justify-content: space-between;
+    padding: 10px 2vw;
 }
 nav .logo_img {
     cursor: pointer;
     height: 55px;
-    margin-right: 325px;
 }
-nav .lupa {
-    margin-left: 315px;
+nav .menu-right .lupa {
     cursor: pointer;
     height: 25px;
     filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(640%) hue-rotate(171deg) brightness(91%) contrast(85%);
 }
-nav .mapa {
+nav .menu-right .mapa {
     margin-left: 25px;
     cursor: pointer;
     height: 35px;
     filter: brightness(0) saturate(100%) invert(30%) sepia(14%) saturate(640%) hue-rotate(171deg) brightness(91%) contrast(85%);
 }
-nav .userIcon {
+nav .menu-right .userIcon {
     margin-left: 25px;
     cursor: pointer;
     height: 35px;

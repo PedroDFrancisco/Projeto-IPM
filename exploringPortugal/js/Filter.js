@@ -1,5 +1,4 @@
 const IMG_DIR = "resources/";
-const BASE_FILTERS = ["order1", "order2", "order3", "order4"];
 var add_lat_long = false;
 
 function Filter() {
