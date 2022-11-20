@@ -141,12 +141,9 @@ nav .menu-right .userIcon {
     width: 50px;
 }
 .feedboard {
-    margin-top:4%;
-    font-size: 15px;
+    margin-top:80px;
+    font-size: 12px;
     display: inline-box;
-}
-.feed{
-    margin-top:2%;
 }
 .feed h1{
     margin-left: 1%;
