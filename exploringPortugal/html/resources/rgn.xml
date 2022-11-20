@@ -506,4 +506,46 @@
       
     </tags>
   </vg>
+  <vg>
+    <name>Praia de Monte Gordo</name>
+    <order>Beach</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <latitude>37.17729636652206</latitude>
+    <longitude>-7.446569655052482</longitude>
+    <location>Monte Gordo, Faro</location>
+    <schedule> </schedule>
+    <phone> </phone>
+    <link>http://www.playocean.net/portugal/vila-real-de-santo-antonio-este/praias/praia-de-monte-gordo</link>
+    <tags>
+      
+    </tags>
+  </vg>41.80407023533912, -6.7492314330580125
+  <vg>
+    <name>Castelo de Bragança</name>
+    <order>Monument</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <latitude>41.80407023533912</latitude>
+    <longitude>-6.7492314330580125</longitude>
+    <location>Bragança</location>
+    <schedule>09:00-17:00</schedule>
+    <phone>273 322 378</phone>
+    <link>https://culturanorte.gov.pt/patrimonio/castelo-de-braganca/</link>
+    <tags>
+      
+    </tags>
+  </vg>
+  <vg>
+    <name>Concatedral de Miranda do Douro</name>
+    <order>Monument</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <latitude>41.49308726521644</latitude>
+    <longitude>-6.273404483151125</longitude>
+    <location>Miranda do Douro, Bragança</location>
+    <schedule>09:30-17:30</schedule>
+    <phone>273 417 288</phone>
+    <link>https://www.museuterrademiranda.gov.pt/</link>
+    <tags>
+      
+    </tags>
+  </vg>
 </rgn>
