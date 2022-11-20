@@ -450,4 +450,60 @@
       Pet-Friendly
     </tags>
   </vg>
+  <vg>
+    <name>Montanha do Pico</name>
+    <order>Nature</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <latitude>38.46995074850683</latitude>
+    <longitude>-28.399171961800413</longitude>
+    <location>Ilha do Pico, Açores</location>
+    <schedule>24 hours</schedule>
+    <phone> </phone>
+    <link> </link>
+    <tags>
+      
+    </tags>
+  </vg>
+  <vg>
+    <name>Museu CR7</name>
+    <order>Museum</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <latitude>32.644181677670986</latitude>
+    <longitude>-16.913906387918153</longitude>
+    <location>Funchal, Madeira</location>
+    <schedule>10:00-17:00</schedule>
+    <phone>291 639 880</phone>
+    <link>https://www.museucr7.com/</link>
+    <tags>
+      
+    </tags>
+  </vg>
+  <vg>
+    <name>Pico do Arieiro</name>
+    <order>Nature</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <latitude>32.73560619029511</latitude>
+    <longitude>-16.928895444346235</longitude>
+    <location>Funchal, Madeira</location>
+    <schedule> </schedule>
+    <phone> </phone>
+    <link> </link>
+    <tags>
+      
+    </tags>
+  </vg>
+  <vg>
+    <name>Lagoa das Sete Cidades</name>
+    <order>Nature</order>
+    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <latitude>37.85526390370414</latitude>
+    <longitude>-25.786418869724674</longitude>
+    <location>Ponta Delgada, Açores</location>
+    <schedule> </schedule>
+    <phone> </phone>
+    <link> </link>
+    <tags>
+      
+    </tags>
+  </vg>
 </rgn>

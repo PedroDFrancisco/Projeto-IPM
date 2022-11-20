@@ -173,7 +173,7 @@ class Map {
 		let errorTileUrl = MAP_ERROR;
 		let layer =
 			L.tileLayer(urlTemplate, {
-					minZoom: 6,
+					minZoom: 5,
 					maxZoom: 19,
 					errorTileUrl: errorTileUrl,
 					id: spec,
@@ -320,7 +320,7 @@ class Map {
 
 function onLoad()
 {
-	map = new Map(MAP_CENTRE, 12);
+	map = new Map(MAP_CENTRE, 5);
 	map.createEvents();
 }
 
