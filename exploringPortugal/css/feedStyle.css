@@ -133,14 +133,20 @@ nav .menu-right .userIcon {
     display: block;
 }
 .feedboard {
-    margin-top:5%;
+    margin-top:7%;
     margin-left: 2%;
     font-size: 10px;
 }
 .feed{
-    margin-bottom: 1%;
+    margin:2%;
 }
-.suggestedPeople{
-    margin:3%;
+.feed h1{
+    margin-left: 1%;
+}
+.suggestedPeople h1{
+    margin-left:3%;
 }
 
+.suggestedPlaces h1{
+    margin-left:3%;
+}
