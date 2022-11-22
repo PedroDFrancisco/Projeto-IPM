@@ -35,7 +35,7 @@ nav .logo_img {
 }
 
 .sidebar{
-    background-image: url("../images/loginbackground.png");
+    background-image: url("../../images/loginbackground.png");
     width: 30%;
     height: 100vh;
     justify-content: center;
