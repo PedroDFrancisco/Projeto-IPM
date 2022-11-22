@@ -41,7 +41,6 @@
   <vg>
     <name>Torre de Belém</name>
     <order>Monument</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.691751161212814</latitude>
     <longitude>-9.215891472341497</longitude>
     <location>Lisboa</location>
@@ -55,8 +54,7 @@
   </vg>
   <vg>
     <name>Santuário de Cristo Rei</name>
-    <order>Monument</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <order>Religion</order>
     <latitude>38.67887977179776</latitude>
     <longitude>-9.171347374193266</longitude>
     <location>Almada</location>
@@ -71,7 +69,6 @@
   <vg>
     <name>Ponte 25 de abril</name>
     <order>Monument</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.68983366298793</latitude>
     <longitude>-9.177207062551853</longitude>
     <location>Lisboa</location>
@@ -86,7 +83,6 @@
   <vg>
   <name>Museu Nacional dos Coches</name>
     <order>Museum</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.69681509038669</latitude>
     <longitude>-9.19839305884899</longitude>
     <location>Lisboa</location>
@@ -100,7 +96,6 @@
   <vg>
     <name>Serra da Arrábida</name>
       <order>Nature</order>
-      <type>BOLEMBREANO S/ DEPÓSITO</type>
       <latitude>38.50187892627756</latitude>
       <longitude>-9.000858499284673</longitude>
       <location>Setúbal</location>
@@ -115,7 +110,6 @@
   <vg>
     <name>Serra da Estrela</name>
     <order>Nature</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>40.3231739443611</latitude>
     <longitude>-7.61253803452765</longitude>
     <location>Guarda</location>
@@ -129,7 +123,6 @@
   <vg>
     <name>Santuário de Fátima</name>
     <order>Religion</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>39.63140424983922</latitude>
     <longitude>-8.673157102993207</longitude>
     <location>Santarém</location>
@@ -143,7 +136,6 @@
   <vg>
     <name>Brasão Cervejaria</name>
     <order>Restaurant</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>41.149303557709224</latitude>
     <longitude>-8.611825950987463</longitude>
     <location>Porto</location>
@@ -157,7 +149,6 @@
   <vg>
     <name>Estádio José Alvalade</name>
     <order>Sports</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.761363678940846</latitude>
     <longitude>-9.16175270537576</longitude>
     <location>Lisboa</location>
@@ -171,7 +162,6 @@
   <vg>
     <name>Estádio da Luz</name>
     <order>Sports</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.75275281416083</latitude>
     <longitude>-9.184752545354609</longitude>
     <location>Lisboa</location>
@@ -185,7 +175,6 @@
   <vg>
     <name>Estádio do Dragão</name>
     <order>Sports</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>41.16195575566697</latitude>
     <longitude>-8.583591002933742</longitude>
     <location>Porto</location>
@@ -199,7 +188,6 @@
   <vg>
     <name>Estádio Municipal de Braga</name>
     <order>Sports</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>41.562115133574466</latitude>
     <longitude>-8.430461616410177</longitude>
     <location>Braga</location>
@@ -213,7 +201,6 @@
   <vg>
     <name>NOVA School of Science and Technology | FCT NOVA</name>
     <order>Other</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.66133678770895</latitude>
     <longitude>-9.204989493773375</longitude>
     <location>Almada, Setúbal</location>
@@ -227,7 +214,6 @@
   <vg>
     <name>Templo Romano Évora</name>
     <order>Monument</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.572875571165476</latitude>
     <longitude>-7.9074231490638995</longitude>
     <location>Évora</location>
@@ -238,8 +224,7 @@
   </vg>
   <vg>
     <name>AQUASHOW - Waterpark</name>
-    <order>Other</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
+    <order>Beach</order>
     <latitude>37.0932432589466</latitude>
     <longitude>-8.071887845415365</longitude>
     <location>Quarteira, Faro</location>
@@ -253,7 +238,6 @@
   <vg>
     <name>Estádio do Algarve</name>
     <order>Sports</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>37.08849493968237</latitude>
     <longitude>-7.975569874251427</longitude>
     <location>Almancil, Faro</location>
@@ -267,7 +251,6 @@
   <vg>
     <name>Zoo de Lagos</name>
     <order>Nature</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>37.145406480477575</latitude>
     <longitude>-8.766565247264781</longitude>
     <location>Lagos, Faro</location>
@@ -281,7 +264,6 @@
   <vg>
     <name>Ovibeja</name>
     <order>Nature</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.003932943503</latitude>
     <longitude>-7.855784480305381</longitude>
     <location>Beja</location>
@@ -295,7 +277,6 @@
   <vg>
     <name>Portugal dos Pequenitos</name>
     <order>Other</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>40.202453016084526</latitude>
     <longitude>-8.434396649144098</longitude>
     <location>Coimbra</location>
@@ -309,7 +290,6 @@
   <vg>
     <name>Parque Nacional Peneda-Gerês</name>
     <order>Nature</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>41.83883992391631</latitude>
     <longitude>-8.241590802906815</longitude>
     <location>Braga</location>
@@ -323,7 +303,6 @@
   <vg>
     <name>Praia da Comporta</name>
     <order>Beach</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.38105259992858</latitude>
     <longitude>-8.80346131897441</longitude>
     <location>Grândola, Setúbal</location>
@@ -337,7 +316,6 @@
   <vg>
     <name>Praia da Nazaré</name>
     <order>Beach</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>39.59980854557495</latitude>
     <longitude>-9.07248526525532</longitude>
     <location>Nazaré, Leiria</location>
@@ -351,7 +329,6 @@
   <vg>
     <name>Parque Arqueológico do Vale do Côa</name>
     <order>Monument</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>41.0860765060957</latitude>
     <longitude>-7.110585437734298</longitude>
     <location>Guarda</location>
@@ -365,7 +342,6 @@
   <vg>
     <name>Castelo de Marvão</name>
     <order>Monument</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>39.40218628765785</latitude>
     <longitude>-7.378964556012133</longitude>
     <location>Marvão, Portalegre</location>
@@ -379,7 +355,6 @@
   <vg>
     <name>Myriad by SANA</name>
     <order>Hotel</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.77480899873474</latitude>
     <longitude>-9.091580494298903</longitude>
     <location>Lisboa</location>
@@ -393,7 +368,6 @@
   <vg>
     <name>H4</name>
     <order>Restaurant</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>41.299429</latitude>
     <longitude>-7.744411</longitude>
     <location>Vila Real</location>
@@ -407,7 +381,6 @@
   <vg>
     <name>Burger Prince</name>
     <order>Restaurant</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>41.303038</latitude>
     <longitude>-7.746826</longitude>
     <location>Vila Real</location>
@@ -421,7 +394,6 @@
   <vg>
     <name>Prato Cheio</name>
     <order>Restaurant</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>41.301925</latitude>
     <longitude>-7.744558</longitude>
     <location>Vila Real</location>
@@ -435,7 +407,6 @@
   <vg>
     <name>Sushi Bar</name>
     <order>Restaurant</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>41.301654</latitude>
     <longitude>-7.749629</longitude>
     <location>Vila Real</location>
@@ -449,7 +420,6 @@
   <vg>
     <name>Montanha do Pico</name>
     <order>Nature</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>38.46995074850683</latitude>
     <longitude>-28.399171961800413</longitude>
     <location>Ilha do Pico, Açores</location>
@@ -463,7 +433,6 @@
   <vg>
     <name>Museu CR7</name>
     <order>Museum</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>32.644181677670986</latitude>
     <longitude>-16.913906387918153</longitude>
     <location>Funchal, Madeira</location>
@@ -477,7 +446,6 @@
   <vg>
     <name>Pico do Arieiro</name>
     <order>Nature</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>32.73560619029511</latitude>
     <longitude>-16.928895444346235</longitude>
     <location>Funchal, Madeira</location>
@@ -491,7 +459,6 @@
   <vg>
     <name>Lagoa das Sete Cidades</name>
     <order>Nature</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>37.85526390370414</latitude>
     <longitude>-25.786418869724674</longitude>
     <location>Ponta Delgada, Açores</location>
@@ -505,7 +472,6 @@
   <vg>
     <name>Praia de Monte Gordo</name>
     <order>Beach</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>37.17729636652206</latitude>
     <longitude>-7.446569655052482</longitude>
     <location>Monte Gordo, Faro</location>
@@ -519,7 +485,6 @@
   <vg>
     <name>Castelo de Bragança</name>
     <order>Monument</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>41.80407023533912</latitude>
     <longitude>-6.7492314330580125</longitude>
     <location>Bragança</location>
@@ -533,13 +498,90 @@
   <vg>
     <name>Concatedral de Miranda do Douro</name>
     <order>Monument</order>
-    <type>BOLEMBREANO S/ DEPÓSITO</type>
     <latitude>41.49308726521644</latitude>
     <longitude>-6.273404483151125</longitude>
     <location>Miranda do Douro, Bragança</location>
     <schedule>09:30-17:30</schedule>
     <phone>273 417 288</phone>
     <link>https://www.museuterrademiranda.gov.pt/</link>
+    <tags>
+      
+    </tags>
+  </vg>
+  <vg>
+    <name>Pousada do Castelo de Palmela</name>
+    <order>Hotel</order>
+    <latitude>38.56581537114295</latitude>
+    <longitude>-8.901457629131421</longitude>
+    <location>Palmela</location>
+    <schedule>24 horas</schedule>
+    <phone> </phone>
+    <link> </link>
+    <tags>
+      
+    </tags>
+  </vg>
+  <vg>
+    <name>Sumol Summer Fest</name>
+    <order>Festival</order>
+    <latitude>38.97798616511439</latitude>
+    <longitude>-9.418097560689755</longitude>
+    <location>Ericeira</location>
+    <schedule> </schedule>
+    <phone>210 105 700</phone>
+    <link>https://sumolsummerfest.com/</link>
+    <tags>
+      
+    </tags>
+  </vg>
+  <vg>
+    <name>Aeroporto Humberto Delgado</name>
+    <order>Other</order>
+    <latitude>38.77564376498971</latitude>
+    <longitude>-9.13535597418966</longitude>
+    <location>Lisboa</location>
+    <schedule>24 hours</schedule>
+    <phone>218 413 500</phone>
+    <link>https://www.aeroportolisboa.pt/pt/</link>
+    <tags>
+      
+    </tags>
+  </vg>
+  <vg>
+    <name>Aeroporto Francisco Sá Carneiro</name>
+    <order>Other</order>
+    <latitude>41.242094377160214</latitude>
+    <longitude>-8.678626504781873</longitude>
+    <location>Porto</location>
+    <schedule>24 hours</schedule>
+    <phone>229 432 400</phone>
+    <link>https://www.aeroportoporto.pt/</link>
+    <tags>
+      
+    </tags>
+  </vg>
+  <vg>
+    <name>Zoomarine</name>
+    <order>Beach</order>
+    <latitude>37.12705612704158</latitude>
+    <longitude>-8.314207429015397</longitude>
+    <location>Guia, Algarve</location>
+    <schedule>09:00-19:00</schedule>
+    <phone>289 560 300</phone>
+    <link>https://www.zoomarine.pt/</link>
+    <tags>
+      
+    </tags>
+  </vg>
+  <vg>
+    <name>Rock in Rio - Lisboa</name>
+    <order>Festival</order>
+    <latitude>38.7504546977668</latitude>
+    <longitude>-9.126389063050585</longitude>
+    <location>Lisboa</location>
+    <schedule> </schedule>
+    <phone> </phone>
+    <link>http://rockinriolisboa.sapo.pt/</link>
     <tags>
       
     </tags>

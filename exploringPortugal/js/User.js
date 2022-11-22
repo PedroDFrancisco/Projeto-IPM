@@ -38,19 +38,22 @@ function ProfileLoad() {
     submitCom.addEventListener("click", function () {
         let comment = document.getElementById('add-comment');
 
-        let row = document.createElement('div');
+        if (comment.value != "") {
+            let row = document.createElement('div');
+            row.innerHTML = "<br>"
 
-        let img = document.createElement('img');
-        img.className = "comment-image";
-        img.src = "" + ".png";
+            let img = document.createElement('img');
+            img.className = "comment-image";
+            img.src = "../../images/nova logo" + ".png";
 
-        let text = document.createElement("p");
-        text.className = "comment-text";
-        text.innerHTML = comment.value;
+            let text = document.createElement("p");
+            text.className = "comment-text";
+            text.innerHTML = "<b>NOVA Student</b>" + "<br>" + comment.value;
 
-        row.appendChild(img);
-        row.appendChild(text);
-        divCom.appendChild(row);
-        comment.value = 'add-comment';
+            row.appendChild(img);
+            row.appendChild(text);
+            divCom.appendChild(row);
+            comment.value = '';
+        }
     });
 }
