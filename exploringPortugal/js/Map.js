@@ -83,6 +83,7 @@ class POI {
 		this.name = getFirstValueByTagName(xml, "name");
 		this.latitude = getFirstValueByTagName(xml, "latitude");
 		this.longitude = getFirstValueByTagName(xml, "longitude");
+		console.log(this.name);
 	}
 }
 
@@ -113,7 +114,9 @@ class VG extends POI {
 		"Phone: " + this.phone + "<br>" +
 		"Website: " + this.link + "<br>" +
 		"Tags: " + this.tags + "<br>" +
-		"<br> <a href= /exploringPortugal/html/locationsProfile.html>"+"<button>More Info</button>" +"</a>";
+		"<br> <a href= /exploringPortugal/html/locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
+		this.location.replaceAll(" ", "-")+"&schedule="+this.schedule.replaceAll(" ", "_")+"&phone="+
+		this.phone.replaceAll(" ", "-")+"&website="+this.link+">"+"<button>More Info</button>" +"</a>";
 	}
 }
 
@@ -144,8 +147,11 @@ class NormVG {
 		"Location: " + this.location + "<br>" +
 		"Schedule: " + this.schedule + "<br>" +
 		"Phone: " + this.phone + "<br>" +
-		"Website: " + this.link + 
-		"<br> <a href= /exploringPortugal/html/locationsProfile.html"+"<button>More Info</button>" +"</a>";
+		"Website: " + this.link +
+		"Tags: " + this.tags + "<br>" +
+		"<br> <a href= /exploringPortugal/html/locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
+		this.location.replaceAll(" ", "-")+"&schedule="+this.schedule.replaceAll(" ", "_")+"&phone="+
+		this.phone.replaceAll(" ", "-")+"&website="+this.link+">"+"<button>More Info</button>" +"</a>";
 	}
 }
 
@@ -223,22 +229,7 @@ class Map {
 			alert("Empty file");
 		else {
 			for(let i = 0 ; i < xs.length ; i++) {
-				//let order = getFirstValueByTagName (xs[i], "order");
-				let circle = null;
 				let vg = new VG(xs[i]);
-				/*switch (order) {
-					case "1":
-						vg = new VG1 (xs[i], order);
-						break;
-					case "2":
-						vg = new VG2 (xs[i], order);
-						break;
-					case "3":
-						vg = new VG3 (xs[i], order);
-						break;
-					default:
-						vg = new VG4 (xs[i], order);
-				}*/
 				vgs.push(vg);
 			}
 		}

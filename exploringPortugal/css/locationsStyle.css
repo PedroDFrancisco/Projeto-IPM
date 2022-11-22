@@ -10,102 +10,105 @@ html {
 .upperMenu {
     /* background-color: lightblue; */
     margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
 .upperMenu .pratoCheio {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 110px;
+    margin-left: 3.46vw;
     width: 130px;
     border-radius: 50%;
 }
 
+.upperMenu .upperMenu-left {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}
+
+.upperMenu .upperMenu-left .upperMenu-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.upperMenu .upperMenu-left .upperMenu-text .title-row {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.upperMenu .upperMenu-left .upperMenu-text .detail-row {
+    display: flex;
+    column-gap: 60px;
+}
+
+.upperMenu .upperMenu-left .upperMenu-text .detail-row .image-text {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
 .upperMenu .name {
-    position: absolute;
-    margin-left: 270px;
-    margin-top: 35px;
     font-size: 22px;
     color: #003366;
+    font-weight: bold;
 }
 
 .upperMenu .stars{
-    margin-top: 31px;
-    margin-left: 420px;
-    position: absolute;
     width: 140px;
 }
 
 .upperMenu .marker {
-    position: absolute;
     height: 35px;
     filter: invert(14%) sepia(28%) saturate(6196%) hue-rotate(195deg) brightness(91%) contrast(102%);
-    margin-top: 80px;
-    margin-left: 25px;
 }
 
 .upperMenu .location {
-    position: absolute;
-    margin-left: 310px;
-    margin-top: 88px;
     font-size: 18px;
     color: #003366;
 }
 
 .upperMenu .clock {
-    position: absolute;
     height: 35px;
     filter: invert(14%) sepia(28%) saturate(6196%) hue-rotate(195deg) brightness(91%) contrast(102%);
-    margin-top: 80px;
-    margin-left: 200px;
 }
 
 .upperMenu .schedule {
-    position: absolute;
-    margin-left: 490px;
-    margin-top: 88px;
     font-size: 18px;
     color: #003366;
 }
 
 .upperMenu .phone {
-    position: absolute;
     height: 35px;
     filter: invert(14%) sepia(28%) saturate(6196%) hue-rotate(195deg) brightness(91%) contrast(102%);
-    margin-top: 80px;
-    margin-left: 420px;
 }
 
 .upperMenu .phoneNumber {
-    position: absolute;
-    margin-left: 710px;
-    margin-top: 88px;
     font-size: 18px;
     color: #003366;
 }
 
 .upperMenu .www {
-    position: absolute;
     height: 35px;
     filter: invert(14%) sepia(28%) saturate(6196%) hue-rotate(195deg) brightness(91%) contrast(102%);
-    margin-top: 80px;
-    margin-left: 630px;
 }
 
 .upperMenu .link {
-    position: absolute;
-    margin-left: 920px;
-    margin-top: 88px;
     font-size: 18px;
     color: #003366;
-}
+} 
 
 .follow {
-    margin-top: 30px;
-    margin-left: 1220px;
-    position: absolute;
+    height: 50px;
+    width: 150px;
+    margin-right: 3.46vw;
     background-color: #003366; 
     border: none;
     color: white;
-    padding: 15px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

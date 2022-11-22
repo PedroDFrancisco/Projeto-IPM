@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <SCRIPT TYPE="text/javascript" SRC="../js/LocationProfile.js"></SCRIPT>
     </head>
     <div class="menu">
         <nav>
@@ -70,18 +71,34 @@
         </nav>
     </div>
     <div class="upperMenu">
+        <div class="upperMenu-left">
+            <img src="../../images/pratoCheio.webp" class="pratoCheio">
+            <div class="upperMenu-text">
+                <div class="title-row">
+                    <div class="name"><p id="name">Prato Cheio</p></div>
+                    <img src="../../images/stars.png" class="stars">
+                </div>
+                <div class="detail-row">
+                    <div class="image-text">
+                        <img src="../../images/marker.png" class="marker">
+                        <div class="location" id="location">Vila Real</div>
+                    </div>
+                    <div class="image-text">
+                        <img src="../../images/clock.png" class="clock">
+                        <div class="schedule" id="schedule">09:00 - 00:00</div>
+                    </div>
+                    <div class="image-text">
+                        <img src="../../images/phone.png" class="phone">
+                        <div class="phoneNumber" id="phone">917 898 400</div>
+                    </div>
+                    <div class="image-text">
+                        <img src="../../images/www.png" class="www">
+                        <div class="link" id="website"><u>www.pratocheio.pt</u></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <button class="follow">Follow</button>
-        <img src="../../images/stars.png" class="stars">
-        <div class="name"><b>Prato Cheio</b></div>
-        <div class="location">Vila Real</div>
-        <div class="schedule">09:00 - 00:00</div>
-        <div class="phoneNumber">917 898 400</div>
-        <div class="link"><u>www.pratocheio.pt</u></div>
-        <img src="../../images/pratoCheio.webp" class="pratoCheio">
-        <img src="../../images/marker.png" class="marker">
-        <img src="../../images/clock.png" class="clock">
-        <img src="../../images/phone.png" class="phone">
-        <img src="../../images/www.png" class="www">
     </div>
     <div class="lowerMenu">
         <img src="../../images/weatherThursday.png" class="weatherThursday">
@@ -99,4 +116,8 @@
             <input type="text" class="commentSection" placeholder="Add a comment..."><br><br>
         </div>
     </div>
+
+    <script> 
+            LocProfileLoad();
+    </script>
 </html>
