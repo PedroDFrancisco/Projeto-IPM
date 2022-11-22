@@ -50,30 +50,21 @@ nav .menu-right .userIcon {
 .ponte25deabril {
     background-position: center;
     width: 100%;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
 }
 .welcome {
     position: absolute;
     color: #47525E;
-    margin-top: 125px;
-    margin-left: 910px;
+    top: 100px;
+    margin-left: 56%;
     font-size: 80px;
+    width: 40%;
 }
 .cont {
     text-align: center;
-}
-.por {
-    position: absolute;
-    color: #006602;
-    margin-top: 195px;
-    margin-left: 915px;
-    font-size: 110px;
-}
-.tugal {
-    position: absolute;
-    color: #FF0000;
-    margin-top: 195px;
-    margin-left: 1112px;
-    font-size: 110px;
 }
 .background .gotomap {
     top: 35.5%;
@@ -121,84 +112,84 @@ footer{
     background-color: white;
   }
   
-  /* Navigation links */
-  .navbar a {
-    float: left;
-    font-size: 18px;
-    color: #47525E;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    margin-left: 30px;
-  }
-  
-  /* The subnavigation menu */
-  .subnav {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Subnav button */
-  .subnav .subnavbtn {
-    margin-left: 30px;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    color: #47525E;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-  }
-  
-  /* Add a red background color to navigation links on hover */
-  .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: #eee;
-    font-weight: bold;
-    color: black;
-    cursor: pointer;
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: #47525E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 30px;
 }
-  
-  /* Style the subnav content - positioned absolute */
-  .subnav-content {
-    /* padding-left: 250px; */
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: white;
-    width: 100%;
-    z-index: 1;
-    box-shadow: 0 8px 6px -6px #444;
-  }
 
-  .subnav-content1 {
-    display: flex;
-    justify-content: center;
-  }
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
 
-  .subnav-content2 {
-    display: flex;
-    justify-content: center;
-  }
+/* Subnav button */
+.subnav .subnavbtn {
+  margin-left: 30px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #47525E;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
 
-  .subnav-content3 {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Style the subnav links */
-  .subnav-content a {
-    float: left;
-    color: #47525E;
-    text-decoration: none;
-  }
-  
-  /* Add a grey background color on hover */
-  .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-  
-  /* When you move the mouse over the subnav container, open the subnav content */
-  .subnav:hover .subnav-content {
-    display: block;
-  }
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #eee;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  /* padding-left: 250px; */
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 8px 6px -6px #444;
+}
+
+.subnav-content1 {
+  display: flex;
+  justify-content: center;
+}
+
+.subnav-content2 {
+  display: flex;
+  justify-content: center;
+}
+
+.subnav-content3 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: #47525E;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
