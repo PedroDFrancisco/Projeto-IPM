@@ -114,7 +114,7 @@ class VG extends POI {
 		"Phone: " + this.phone + "<br>" +
 		"Website: " + this.link + "<br>" +
 		"Tags: " + this.tags + "<br>" +
-		"<br> <a href= /exploringPortugal/html/locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
+		"<br> <a href= locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
 		this.location.replaceAll(" ", "-")+"&schedule="+this.schedule.replaceAll(" ", "_")+"&phone="+
 		this.phone.replaceAll(" ", "-")+"&website="+this.link+">"+"<button>More Info</button>" +"</a>";
 	}
@@ -149,7 +149,7 @@ class NormVG {
 		"Phone: " + this.phone + "<br>" +
 		"Website: " + this.link +
 		"Tags: " + this.tags + "<br>" +
-		"<br> <a href= /exploringPortugal/html/locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
+		"<br> <a href= locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
 		this.location.replaceAll(" ", "-")+"&schedule="+this.schedule.replaceAll(" ", "_")+"&phone="+
 		this.phone.replaceAll(" ", "-")+"&website="+this.link+">"+"<button>More Info</button>" +"</a>";
 	}
