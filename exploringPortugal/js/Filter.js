@@ -14,8 +14,6 @@ function Filter() {
         checkbox.className = "filter checkbox";
         checkbox.type = "checkbox";
 
-        
-  	     
 	    if(category != null) {
             if(VG_ORDERS[i] === category) {
                 checkbox.checked = true;

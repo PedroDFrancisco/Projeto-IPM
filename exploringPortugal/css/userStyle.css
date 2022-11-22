@@ -46,14 +46,17 @@ html {
     text-align: center;
 }
 .lowerMenu ul li{
+    color: #47525E; /*#003366*/
     font-size: 20px;
     display: inline-block;
     list-style: none;
     margin: 0 70px;
+    cursor: pointer;
 }
-.lowerMenu ul li a{
+.lowerMenu ul li.on {
     text-decoration: none;
-    color: #47525E; /*#003366*/
+    border-bottom: 2px solid #003366; 
+    color: black;
 }
 
 .container {
@@ -74,9 +77,21 @@ html {
     margin-top: 15px;
 }
 
-.posts {
-    height: 400px;
+.division {
+    height: 50vh;
     background-color: #F5F5F5;
+}
+
+.division .div {
+    display: none;
+}
+
+.division .div.on {
+    display: block;
+}
+
+.division .comments .comment-textbox-wrapper .submmit-comment {
+    cursor: pointer;
 }
 
 .noPosts {

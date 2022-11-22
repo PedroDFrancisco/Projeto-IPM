@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <SCRIPT TYPE="text/javascript" SRC="../js/User.js"></SCRIPT>
     </head>
     <div class="menu">
         <nav>
@@ -80,15 +81,30 @@
             <a href="../html/home.html"><button class="follow">Follow</button></a>
         </div>
         <ul>
-            <li><a href="#districts" style="border-bottom: 6px solid #003366; color: black;"><b>Posts</b></a></li>
-            <li><a href="#categories">Favorite Places</a></li>
-            <li><a href="#trips">Comments</a></li>
+            <li class="division-option posts on" id="division-option-posts">Posts</li>
+            <li class="division-option favourites" id="division-option-fav">Favorite Places</li>
+            <li class="division-option comments" id="division-option-com">Comments</li>
         </ul>
     </div>
-    <div class="posts">
-        <div class="container">
+    <div class="division">
+        <!-- <div class="container">
             <img src="../../images/camera.png" class="noPosts">
             <div class="noPostsYet"><p>This user hasn't posted yet.</p></div>
+        </div> -->
+        <div class="posts div on" id="division-div-posts">
+            <h1>Posts</h1>
+        </div>
+        <div class="favourites div" id="division-div-fav">
+            <h1>Favourites</h1>
+        </div>
+        <div class="comments div" id="division-div-com">
+            <h1>Comments</h1>
+            <div class="comment-textbox-wrapper">
+                <input type="text" class="comment-textbox" id="add-comment" placeholder="Add a comment">
+                <p class="submmit-comment" id="submmit-comment">&#62;</p>
+            </div>
         </div>
     </div>
+
+    <script>ProfileLoad();</script>
 </html>
