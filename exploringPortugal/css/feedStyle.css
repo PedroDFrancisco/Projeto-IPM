@@ -144,28 +144,33 @@ nav .menu-right .userIcon {
     margin-top:80px;
     font-size: 12px;
     display: inline-box;
+    overflow: auto;
 }
 .feed h1{
-    margin-left: 1%;
+    margin-left: 9%;
+    margin-bottom: 2%;
 }
 .suggestedPeople{
     padding-bottom: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     background-color: #eee;
 }
 .suggestedPlaces{
     padding-bottom: 1%;
-    margin-bottom: 2%;
     background-color: #eee;
 }
 .suggestedPeople h1{
-    margin-left:3%;
+    color: dimgray;
+    margin-left:9%;
     margin-top: 0.5%;
+    padding-top: 0.5%;
     margin-bottom: 0.5%;
 }
 .suggestedPlaces h1{
-    margin-left:3%;
+    color: dimgray;
+    margin-left:9%;
     margin-top: 0.5%;
+    padding-top: 0.5%;
     margin-bottom: 0.5%;
 }
 .suggestionBoxes{
@@ -176,14 +181,28 @@ nav .menu-right .userIcon {
 .suggestionBoxes img{
     height: 50px;
     width: 50px;
+    border-radius: 100%;
 }
 .box{
     height:300px;
     width:250px;
-    border-style: dashed;
+    border-style: none;
+    background-color: white;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-
+.box img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+.box h2{
+    color: black;
+    font-size: 23px;
+}
+.box h3{
+    font-size: 17px;
+    color:dimgray;
+}
