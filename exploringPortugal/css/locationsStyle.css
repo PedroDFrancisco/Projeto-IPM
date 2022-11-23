@@ -120,69 +120,102 @@ html {
 .lowerMenu {
     background-color: #C8E7FF;
     height: 100vh;
+    display: flex;
+    column-gap: 10px;
+}
+
+.lowerMenu .lowerRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.lowerMenu .lowerLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.lowerMenu .lowerRight .images {
+    display: flex;
+    column-gap: 5px;
 }
 
 .lowerMenu .weatherThursday {
-    position: absolute;
-    float: right;
-    width: 400px;
-    margin-top: 7px;
-    margin-left: 1110px;
+    /*position: absolute;*/
+    /*float: right;*/
+    width: 26.9vw;
+    /*margin-top: 7px;
+    margin-left: 1110px;*/
+    margin-top: 10px;
 }
 
 .lowerMenu .averageVisitors {
-    position: absolute;
-    float: right;
-    width: 400px;
-    margin-top: 130px;
-    margin-left: 1100px;
+    /*position: absolute;*/
+    /*float: right;*/
+    width: 26.9vw;
+    /*margin-top: 130px;
+    margin-left: 1100px;*/
 }
 
 .lowerMenu .gallery{
     font-size: 22px;
-    position: absolute;
+    /*position: absolute;*/
     margin-top: 12px;
-    margin-left: 50px;
+    /*margin-left: 1.46vw;*/
     background-color: white;
     height: 280px;
-    width: 1030px;
+    /*width: 1030px;*/
     color: #003366;
-    padding-top: 15px;
+    padding-top: 10px;
     border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.lowerMenu .lowerRight .gallery .gallery-slider {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .lowerMenu .gallery .gallery1 {
-    margin-top: 10px;
-    position: absolute;
+    /*margin-top: 10px;*/
+    /*position: absolute;*/
     height: 200px;
-    padding-left: 80px;
+    /*padding-left: 80px;*/
 } 
 
 .lowerMenu .gallery .gallery2 {
-    margin-top: 10px;
-    margin-left: 220px;
-    position: absolute;
+    /*margin-top: 10px;
+    margin-left: 220px;*/
+    /*position: absolute;*/
     height: 200px;
-    padding-left: 80px;
+    /*padding-left: 80px;*/
+    max-width: 340px;
+    width: 300px;
 } 
 
 .lowerMenu .gallery .gallery3 {
-    margin-top: 10px;
-    margin-left: 570px;
-    position: absolute;
+    /*margin-top: 10px;
+    margin-left: 570px;*/
+    /*position: absolute;*/
     height: 200px;
-    padding-left: 80px;
+    /*padding-left: 80px;*/
 } 
 
 .lowerMenu .comments {
-    position: absolute;
-    height: 400px;
-    width: 1030px;
+    /*position: absolute;*/
+    /*height: 400px;
+    width: 1030px;*/
     background-color: white;
-    margin-top: 310px;
+    /*margin-top: 310px;
     margin-left: 50px;
-    padding-left: 80px;
+    padding-left: 80px;*/
     border-radius: 50px;
+    /*margin-left: 1.46vw;*/
+    margin-top: 20px;
 }
 
 .lowerMenu .comments .commentsTitle{
@@ -190,35 +223,38 @@ html {
     color: #003366;
     padding-top: 15px;
     border-radius: 50px;
+    padding-left: 25px;
 }
 
 .lowerMenu .comments .commentSection {
     width: 870px;
     font-size: 15px;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 15px;
     border-radius: 50px;
+    margin: 10px 20px;
 }
 
 .lowerMenu .gallery .previousButton {
     filter: invert(14%) sepia(28%) saturate(6196%) hue-rotate(195deg) brightness(91%) contrast(102%);
-    position: absolute;
-    margin-top: 80px;
-    margin-left: 20px;
+    /*position: absolute;*/
+    /*margin-top: 80px;
+    margin-left: 20px;*/
     width: 35px;
     transform:rotate(180deg);
 }
 
 .lowerMenu .gallery .nextButton {
     filter: invert(14%) sepia(28%) saturate(6196%) hue-rotate(195deg) brightness(91%) contrast(102%);
-    position: absolute;
+    /*position: absolute;*/
     width: 35px;
-    margin-top: 80px;
-    margin-left: 970px;
+    /*margin-top: 80px;
+    margin-left: 970px;*/
 }
 
 .lowerMenu .gallery .galleryTitle{
     margin-left: 80px;
+    font-weight: bold;
 }
