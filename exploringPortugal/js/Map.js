@@ -107,7 +107,7 @@ class VG extends POI {
 	}
 
 	popMessage () {
-		return "<b>" + this.name + "</b>" + "<br>" +
+		return "<b>" + this.name + "</b>" + "<br>" + "<br>" +
 		"Category: " + this.order + "<br>" +
 		"Location: " + this.location + "<br>" +
 		"Schedule: " + this.schedule + "<br>" +
@@ -142,7 +142,7 @@ class NormVG {
 	}
 
 	popMessage () {
-		return "<b>" + this.name + "</b>" + "<br>" +
+		return "<b>" + this.name + "</b>" + "<br>" + "<br>" +
 		"Category: " + this.order + "<br>" +
 		"Location: " + this.location + "<br>" +
 		"Schedule: " + this.schedule + "<br>" +
