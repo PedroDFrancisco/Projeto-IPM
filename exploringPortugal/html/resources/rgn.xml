@@ -10,7 +10,7 @@
     <schedule>24 hours</schedule>
     <phone> </phone>
     <link> </link>
-    <tags>Pet-Friendly</tags>
+    <tags>Sun, Pet-Friendly</tags>
 </vg>
 <vg>
   <name>Praia de Faro</name>
@@ -22,7 +22,7 @@
     <phone> </phone>
     <link> </link>
     <tags>
-      Pet-Friendly
+      Sun, Pet-Friendly
     </tags>
 </vg>
 <vg>
@@ -35,7 +35,7 @@
     <phone> </phone>
     <link>http://sudoeste.meo.pt/</link>
     <tags>
-      Pet-Friendly
+      Music, Outdoor
     </tags>
   </vg>
   <vg>
@@ -48,8 +48,7 @@
     <phone>213 620 034</phone>
     <link>http://www.torrebelem.pt/</link>
     <tags>
-      <tag>Restaurant</tag>
-      <tag>Museu</tag>
+      Monument
     </tags>
   </vg>
   <vg>
@@ -62,8 +61,7 @@
     <phone>212 751 000</phone>
     <link>https://cristorei.pt/</link>
     <tags>
-      <tag>Restaurant</tag>
-      <tag>Museu</tag>
+      Religion, Monument
     </tags>
   </vg>
   <vg>
@@ -76,8 +74,7 @@
     <phone>212947920</phone>
     <link>https://www.lusoponte.pt/</link>
     <tags>
-      <tag>Restaurant</tag>
-      <tag>Museu</tag>
+      Bridge
     </tags>
   </vg>
   <vg>
@@ -90,7 +87,7 @@
     <phone>210 492 400</phone>
     <link>http://museudoscoches.gov.pt/pt/</link>
     <tags>
-      Pet-Friendly
+      Museum, Indoor
     </tags>
   </vg>
   <vg>
@@ -103,8 +100,7 @@
       <phone> </phone>
       <link> </link>
       <tags>
-        <tag>Restaurante</tag>
-        <tag>Museu</tag>
+        Nature, Outdoor
       </tags>
   </vg>
   <vg>
@@ -117,7 +113,7 @@
     <phone> </phone>
     <link> </link>
     <tags>
-      Pet-Friendly
+      Snow
     </tags>
   </vg>
   <vg>
@@ -130,7 +126,7 @@
     <phone>249 539 600</phone>
     <link>http://www.santuario-fatima.pt/portal/</link>
     <tags>
-      Pet-Friendly
+      Religion
     </tags>
   </vg>
   <vg>
@@ -143,7 +139,7 @@
     <phone>934 158 672</phone>
     <link>http://www.brasao.pt/</link>
     <tags>
-      Pet-Friendly
+      Francesinha
     </tags>
   </vg>
   <vg>
@@ -156,7 +152,7 @@
     <phone>217 516 000</phone>
     <link>https://www.sporting.pt/</link>
     <tags>
-      Pet-Friendly
+      Football
     </tags>
   </vg>
   <vg>
@@ -169,7 +165,7 @@
     <phone>707 200 100</phone>
     <link>https://www.slbenfica.pt/pt-pt/loja/bilhetes/estadio-e-museu</link>
     <tags>
-      Pet-Friendly
+      Football
     </tags>
   </vg>
   <vg>
@@ -182,7 +178,7 @@
     <phone>225 070 500</phone>
     <link>https://www.fcporto.pt/pt/clube/estadio-do-dragao</link>
     <tags>
-      Pet-Friendly
+      Football
     </tags>
   </vg>
   <vg>
@@ -195,7 +191,7 @@
     <phone>253 206 860</phone>
     <link>http://www.scbraga.pt/</link>
     <tags>
-      Pet-Friendly
+      Football
     </tags>
   </vg>
   <vg>
@@ -208,7 +204,7 @@
     <phone>212 948 300</phone>
     <link>http://www.fct.unl.pt/</link>
     <tags>
-      Pet-Friendly
+      University
     </tags>
   </vg>
   <vg>
@@ -220,10 +216,10 @@
     <schedule>24 hours</schedule>
     <phone>266 769 450</phone>
     <link>http://www.cultura-alentejo.pt/</link>
-    <tags>Pet-Friendly</tags>
+    <tags>Roman Temple</tags>
   </vg>
   <vg>
-    <name>AQUASHOW - Waterpark</name>
+    <name>AQUASHOW</name>
     <order>Beach</order>
     <latitude>37.0932432589466</latitude>
     <longitude>-8.071887845415365</longitude>
@@ -232,7 +228,7 @@
     <phone>289 315 129</phone>
     <link>https://aquashowpark.com/</link>
     <tags>
-      Pet-Friendly
+      Waterpark
     </tags>
   </vg>
   <vg>
@@ -245,7 +241,7 @@
     <phone>289 893 200</phone>
     <link>https://www.visitalgarve.pt/pt/233/estadio-algarve.aspx</link>
     <tags>
-      Pet-Friendly
+      Football
     </tags>
   </vg>
   <vg>
@@ -258,7 +254,7 @@
     <phone>282 680 100</phone>
     <link>http://www.zoolagos.com/</link>
     <tags>
-      Pet-Friendly
+      Zoo, Animals
     </tags>
   </vg>
   <vg>
@@ -271,7 +267,7 @@
     <phone>284 310 350</phone>
     <link>http://www.ovibeja.pt/</link>
     <tags>
-      Pet-Friendly
+      Animals
     </tags>
   </vg>
   <vg>
@@ -284,7 +280,7 @@
     <phone>239 801 170</phone>
     <link>https://www.fbb.pt/pp/</link>
     <tags>
-      Pet-Friendly
+      Family
     </tags>
   </vg>
   <vg>
@@ -297,7 +293,7 @@
     <phone>253 203 480</phone>
     <link>http://www.icnf.pt/portal/naturaclas/ap/pnpg</link>
     <tags>
-      Pet-Friendly
+      Nature, Outdoor
     </tags>
   </vg>
   <vg>
@@ -336,7 +332,7 @@
     <phone>279 768 260</phone>
     <link>http://www.arte-coa.pt/</link>
     <tags>
-      Pet-Friendly
+      Fossil
     </tags>
   </vg>
   <vg>
@@ -349,7 +345,7 @@
     <phone>245 909 138</phone>
     <link>http://www.cm-marvao.pt/pt/museus/castelo</link>
     <tags>
-      Pet-Friendly
+      Castle
     </tags>
   </vg>
   <vg>
@@ -362,7 +358,7 @@
     <phone>211 107 600</phone>
     <link>https://www.sanahotels.com/pt/hotel/myriad-by-sana/</link>
     <tags>
-      Pet-Friendly
+      Hotel
     </tags>
   </vg>
   <vg>
@@ -375,7 +371,7 @@
     <phone>917 898 400</phone>
     <link>www.h4.pt</link>
     <tags>
-      Pet-Friendly
+      Hamburger
     </tags>
   </vg>
   <vg>
@@ -388,7 +384,7 @@
     <phone>917 898 400</phone>
     <link>www.burger-prince.pt</link>
     <tags>
-      Pet-Friendly
+      Hamburger
     </tags>
   </vg>
   <vg>
@@ -401,7 +397,7 @@
     <phone>917 898 400</phone>
     <link>www.pratocheio.pt</link>
     <tags>
-      Pet-Friendly
+      Pet-Friendly, Indoor
     </tags>
   </vg>
   <vg>
@@ -414,7 +410,7 @@
     <phone>917 898 400</phone>
     <link>www.pratocheio.pt</link>
     <tags>
-      Pet-Friendly
+      Sushi, Indoor
     </tags>
   </vg>
   <vg>
@@ -427,7 +423,7 @@
     <phone> </phone>
     <link> </link>
     <tags>
-      
+      Outdoor
     </tags>
   </vg>
   <vg>
@@ -440,7 +436,7 @@
     <phone>291 639 880</phone>
     <link>https://www.museucr7.com/</link>
     <tags>
-      
+      Football, Ronaldo, Indoor
     </tags>
   </vg>
   <vg>
@@ -453,7 +449,7 @@
     <phone> </phone>
     <link> </link>
     <tags>
-      
+      Outdoor
     </tags>
   </vg>
   <vg>
@@ -466,7 +462,7 @@
     <phone> </phone>
     <link> </link>
     <tags>
-      
+      Nature
     </tags>
   </vg>
   <vg>
@@ -479,7 +475,7 @@
     <phone> </phone>
     <link>http://www.playocean.net/portugal/vila-real-de-santo-antonio-este/praias/praia-de-monte-gordo</link>
     <tags>
-      
+      Pet-Friendly, Outdoor
     </tags>
   </vg>41.80407023533912, -6.7492314330580125
   <vg>
@@ -492,7 +488,7 @@
     <phone>273 322 378</phone>
     <link>https://culturanorte.gov.pt/patrimonio/castelo-de-braganca/</link>
     <tags>
-      
+      Castle
     </tags>
   </vg>
   <vg>
@@ -505,7 +501,7 @@
     <phone>273 417 288</phone>
     <link>https://www.museuterrademiranda.gov.pt/</link>
     <tags>
-      
+      Monument
     </tags>
   </vg>
   <vg>
@@ -518,7 +514,7 @@
     <phone> </phone>
     <link> </link>
     <tags>
-      
+      Monument, Hotel
     </tags>
   </vg>
   <vg>
@@ -531,7 +527,7 @@
     <phone>210 105 700</phone>
     <link>https://sumolsummerfest.com/</link>
     <tags>
-      
+      Music, Outdoor, Beach
     </tags>
   </vg>
   <vg>
@@ -544,7 +540,7 @@
     <phone>218 413 500</phone>
     <link>https://www.aeroportolisboa.pt/pt/</link>
     <tags>
-      
+      Airport
     </tags>
   </vg>
   <vg>
@@ -557,7 +553,7 @@
     <phone>229 432 400</phone>
     <link>https://www.aeroportoporto.pt/</link>
     <tags>
-      
+      Airport
     </tags>
   </vg>
   <vg>
@@ -570,7 +566,7 @@
     <phone>289 560 300</phone>
     <link>https://www.zoomarine.pt/</link>
     <tags>
-      
+      Nature, Waterpark
     </tags>
   </vg>
   <vg>
@@ -583,7 +579,7 @@
     <phone> </phone>
     <link>http://rockinriolisboa.sapo.pt/</link>
     <tags>
-      
+      Music, Outdoor
     </tags>
   </vg>
   <vg>
