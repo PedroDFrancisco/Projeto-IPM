@@ -111,7 +111,66 @@ html {
 }
 
 .favourites.div {
+    text-align: left;
+    background-color: #F5F5F5;
+}
+
+.favourites.div .pasteis{
+    border-bottom: 1px solid #47525E;
+    padding-bottom: 20px;
+}
+
+.favourites.div b{
+    font-size: 22px;
+}
+
+.favourites.div p{
+    font-size: 18px;
+    color: #47525E;
+}
+
+.favourites.div .favorite{
+    background-color: #003366; 
+    border: none;
+    color: white;
+    padding: 10px 50px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor:pointer;
+    margin-top: 15px;
+}
+
+.favourites.div .more-info{
+    background-color: white; 
+    border: none;
+    color: black;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor:pointer;
+    margin-top: 15px;
+    outline: 1px solid #47525E;
+}
+
+.favourites.div .fado{
+    border-bottom: 1px solid #47525E;
+    padding-bottom: 20px;
+}
+
+.pasteis-img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.fado-img {
+    border-radius: 50%;
+    width: 150px;
 }
 
 .comments.div{
