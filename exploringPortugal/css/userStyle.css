@@ -26,7 +26,7 @@ html {
     position: absolute;
     margin-top: 50px;
     width: 100%;
-    max-width: 1710px;
+    height: 220px;
 }
 .lowerMenu {
     padding-top: 315px;
@@ -167,9 +167,32 @@ html {
     outline: 1px solid #47525E;
 }
 
-.favourites.div .fado{
+.favourites.div .pasteis{
+    padding-top: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     border-bottom: 1px solid #47525E;
     padding-bottom: 20px;
+}
+
+.favourites.div .fado{
+    padding-top: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #47525E;
+    padding-bottom: 20px;
+}
+
+.names{
+    margin-left: 60px;
+}
+
+.buttons{
+    margin-left: 60px;
 }
 
 .pasteis-img {
