@@ -214,7 +214,7 @@ html {
     width: 150px;
 }
 
-.division .comments.div{
+.division .comments.div.on{
     display: flex;
     justify-content: center;
 }
