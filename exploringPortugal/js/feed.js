@@ -119,18 +119,30 @@ function init() {
     suggestions3();
     suggestions1();
     document.getElementById("upperleftarrow").addEventListener("click", function () {
-        if(document.getElementById("sp1").querySelector("h2").innerHTML =="RicFazeres" ){
-            suggestions2();
-        } else {
-            suggestions1();
-        }
+        switchPage();
     });
     document.getElementById("upperrightarrow").addEventListener("click", function () {
-        if(document.getElementById("sp1").querySelector("h2").innerHTML == "RicFazeres"){
-            suggestions2();
-        } else {
-            suggestions1();
-        }
+       switchPage();
     });
 }
+function switchPage(){
+    if(document.getElementById("sp1").querySelector("h2").innerHTML == "RicFazeres"){
+        suggestions2();
+        fernandoMendeslink();
+    } else {
+        removelink();
+        suggestions1();
+    }
+}
+function removelink(){
+    document.getElementById("sp3").removeEventListener("click", relocate);
+}
 
+function fernandoMendeslink(){
+    document.getElementById("sp3").addEventListener("click", relocate);
+}
+
+function relocate(){
+    window.location = "/exploringPortugal/html/userProfile.html";
+}
+    
