@@ -43,7 +43,7 @@ html {
 
 .upperMenu .upperMenu-left .upperMenu-text .detail-row {
     display: flex;
-    column-gap: 60px;
+    column-gap: 40px;
 }
 
 .upperMenu .upperMenu-left .upperMenu-text .detail-row .image-text {
@@ -117,6 +117,18 @@ html {
     cursor:pointer;
 }
 
+.follow.followed {
+    background-color: #ffffff; 
+    border: solid 1px #003366;
+    color: #003366;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor:pointer;
+}
+
 .lowerMenu {
     background-color: #C8E7FF;
     height: 100vh;
@@ -147,6 +159,7 @@ html {
     /*margin-top: 7px;
     margin-left: 1110px;*/
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .lowerMenu .averageVisitors {
