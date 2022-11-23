@@ -60,16 +60,44 @@
     height: 50px;
 }
 
+.side-menu .filter-wrapper .filter .filter-image-text-wrapper .filter-text {
+    font-size: 20px;
+}
+
+.side-menu .filter-wrapper .filter .filter.checkbox {
+    height: 17px;
+    width: 17px;
+}
+
 .side-menu .add-marker-wrapper {
     background-color: white;
     border-radius: 25px;
     margin: 4% 3%;
-    height: 70%;
     display: none;
 }
 
 .side-menu .add-marker-wrapper.on {
     display: block;
+}
+
+.side-menu .add-marker-wrapper .add-marker-values {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-bottom: 15px;
+}
+
+.side-menu .add-marker-wrapper .add-marker-values .add-marker-text p {
+    font-size: 20px;
+}
+.side-menu .add-marker-wrapper .add-marker-values .add-marker-text input {
+    font-size: 20px;
+}
+
+.side-menu .add-marker-wrapper .add-marker-values .add-marker-text select {
+    width: 245px;
+    font-size: 20px;
 }
 
 .close-wrapper {
@@ -110,8 +138,23 @@
 
 .leaflet-popup-content {
     text-align: center;
+    font-size: 13px;
 }
 
 .leaflet-popup-content b {
     font-size: 20px;
+}
+
+.leaflet-popup-content button {
+    background-color: #003366; 
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor:pointer;
+    margin-top: 15px;
 }

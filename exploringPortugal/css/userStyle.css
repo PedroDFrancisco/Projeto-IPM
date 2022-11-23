@@ -5,13 +5,19 @@
 html {
     scroll-behavior: smooth;
 }
+
+.headerProfile {
+    display: flex;
+    justify-content: center;
+}
+
 .profilePic {
     position: absolute;
     display: block;
     margin-top: 230px;
     text-align: center;
     left: 50%;
-    width: 10%;
+    width: 160px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid white;
@@ -20,6 +26,7 @@ html {
     position: absolute;
     margin-top: 50px;
     width: 100%;
+    height: 220px;
 }
 .lowerMenu {
     padding-top: 315px;
@@ -46,14 +53,18 @@ html {
     text-align: center;
 }
 .lowerMenu ul li{
+    color: #47525E; /*#003366*/
     font-size: 20px;
     display: inline-block;
     list-style: none;
     margin: 0 70px;
+    cursor: pointer;
 }
-.lowerMenu ul li a{
+.lowerMenu ul li.on {
+    font-weight: bold;
     text-decoration: none;
-    color: #47525E; /*#003366*/
+    border-bottom: 5px solid #003366; 
+    color: black;
 }
 
 .container {
@@ -74,14 +85,40 @@ html {
     margin-top: 15px;
 }
 
-.posts {
-    height: 400px;
+.division {
+    height: 50vh;
     background-color: #F5F5F5;
+}
+
+.division .div {
+    display: none;
+}
+
+.division .div.on {
+    display: block;
+}
+
+.division .comments .comment-textbox-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.division .comments .comment-textbox-wrapper .submmit-comment {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    padding-top: 6px;
+}
+
+.posts.div.on {
+    text-align: center;
+    background-color: #F5F5F5;
+    height: 100%;
 }
 
 .noPosts {
     margin-top: 30px;
-    text-align: center;
     width: 150px;
     filter: invert(28%) sepia(14%) saturate(575%) hue-rotate(171deg) brightness(100%) contrast(89%);
 }
@@ -89,4 +126,126 @@ html {
 .noPostsYet {
     font-size: 20px;
     color: #47525E;
+}
+
+.favourites.div {
+    text-align: left;
+    background-color: #F5F5F5;
+}
+
+.favourites.div .pasteis{
+    border-bottom: 1px solid #47525E;
+    padding-bottom: 20px;
+}
+
+.favourites.div b{
+    font-size: 22px;
+}
+
+.favourites.div p{
+    font-size: 18px;
+    color: #47525E;
+}
+
+.favourites.div .favorite{
+    background-color: #003366; 
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor:pointer;
+    margin-top: 15px;
+}
+
+.favourites.div .more-info{
+    background-color: white; 
+    border: none;
+    color: black;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor:pointer;
+    margin-top: 15px;
+    outline: 1px solid #47525E;
+}
+
+.favourites.div .pasteis{
+    padding-top: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #47525E;
+    padding-bottom: 20px;
+}
+
+.favourites.div .fado{
+    padding-top: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #47525E;
+    padding-bottom: 20px;
+}
+
+.names{
+    margin-left: 60px;
+}
+
+.buttons{
+    margin-left: 60px;
+}
+
+.pasteis-img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.fado-img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.division .comments.div.on{
+    display: flex;
+    justify-content: center;
+}
+
+.comment-image{
+    border-radius: 50%;
+}
+
+.comment-textbox{
+    margin-top: 10px;
+    border: 0px;
+    background-color: white;
+    border-radius: 40px;
+    padding: 15px 40px;
+    width: 800px;
+}
+
+.submmit-comment{
+    filter: invert(12%) sepia(95%) saturate(2346%) hue-rotate(196deg) brightness(91%) contrast(102%);
+    width: 25px;
+}
+
+.comments.div.on {
+    background-color: #F5F5F5;
+}
+
+.realComment {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: 25px;
+    margin-top: 15px;
+    padding-bottom: 15px;
 }

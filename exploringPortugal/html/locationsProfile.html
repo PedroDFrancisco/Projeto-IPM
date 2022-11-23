@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <SCRIPT TYPE="text/javascript" SRC="../js/LocationProfile.js"></SCRIPT>
     </head>
     <div class="menu">
         <nav>
@@ -19,31 +20,33 @@
                 <div class="subnav">
                 <button class="subnavbtn">Regions <i class="fa fa-caret-down"></i></button>
                 <div class="subnav-content">
-                    <a href="#norte">Norte</a>
-                    <a href="#centro">Centro</a>
-                    <a href="#lisboa">Grande Lisboa</a>
-                    <a href="#alentejo">Alentejo</a>
-                    <a href="#algarve">Algarve</a>
-                    <a href="#madeira">Madeira</a>
-                    <a href="#acores">Açores</a>
+                    <div class="subnav-content1">
+                        <a href="map.html?region=norte">North</a>
+                        <a href="map.html?region=centro">Center</a>
+                        <a href="map.html?region=lisboa">Lisbon</a>
+                        <a href="map.html?region=alentejo">Alentejo</a>
+                        <a href="map.html?region=algarve">Algarve</a>
+                        <a href="map.html?region=madeira">Madeira</a>
+                        <a href="map.html?region=acores">Açores</a>
+                    </div>  
                 </div>
                 </div>
                 <div class="subnav">
                 <button class="subnavbtn">Categories <i class="fa fa-caret-down"></i></button>
                 <div class="subnav-content">
                     <div class="subnav-content1">
-                        <a href="#beach">Beach</a>
-                        <a href="#festival">Festival</a>
-                        <a href="#hotel">Hotel</a>
-                        <a href="#monument">Monument</a>
-                        <a href="#museum">Museum</a>
-                        <a href="#nature">Nature</a>
+                        <a href="map.html?category=Beach">Beach</a>
+                        <a href="map.html?category=Festival">Festival</a>
+                        <a href="map.html?category=Hotel">Hotel</a>
+                        <a href="map.html?category=Monument">Monument</a>
+                        <a href="map.html?category=Museum">Museum</a>
+                        <a href="map.html?category=Nature">Nature</a>
                     </div>
                     <div class="subnav-content2">
-                        <a href="#religion">Religion</a>
-                        <a href="#restaurant">Restaurant</a>
-                        <a href="#sports">Sports</a>
-                        <a href="#other">Other</a>
+                        <a href="map.html?category=Religion">Religion</a>
+                        <a href="map.html?category=Restaurant">Restaurant</a>
+                        <a href="map.html?category=Sports">Sports</a>
+                        <a href="map.html?category=Other">Other</a>
                     </div>
                 </div>
                 </div>
@@ -58,43 +61,76 @@
                         </div>
                     </div>
                 </div>
-                <a href="/exploringPortugal/html/feed.html">Feed</a>
+                <a href="feed.html">Feed</a>
             </div>
             <div class="menu-right">
                 <a href=""><img src="../../images/lupa.png" class="lupa"></a>
                 <a href="map.html"><img src="../../images/mapa.webp" class="mapa"></a>
-                <a href="/exploringPortugal/html/login.html"><img src="../../images/userIcon.png" class="userIcon"></a>
+                <a href=""><img src="../../images/userIcon.png" class="userIcon"></a>
             </div>
         </nav>
     </div>
     <div class="upperMenu">
-        <button class="follow">Follow</button>
-        <img src="../../images/stars.png" class="stars">
-        <div class="name"><b>Prato Cheio</b></div>
-        <div class="location">Vila Real</div>
-        <div class="schedule">09:00 - 00:00</div>
-        <div class="phoneNumber">917 898 400</div>
-        <div class="link"><u>www.pratocheio.pt</u></div>
-        <img src="../../images/pratoCheio.webp" class="pratoCheio">
-        <img src="../../images/marker.png" class="marker">
-        <img src="../../images/clock.png" class="clock">
-        <img src="../../images/phone.png" class="phone">
-        <img src="../../images/www.png" class="www">
+        <div class="upperMenu-left">
+            <img src="../../images/default_location.jpeg" class="pratoCheio">
+            <div class="upperMenu-text">
+                <div class="title-row">
+                    <div class="name"><p id="name">Prato Cheio</p></div>
+                    <img src="../../images/stars.png" class="stars">
+                </div>
+                <div class="detail-row">
+                    <div class="image-text">
+                        <img src="../../images/marker.png" class="marker">
+                        <div class="location" id="location">Vila Real</div>
+                    </div>
+                    <div class="image-text">
+                        <img src="../../images/clock.png" class="clock">
+                        <div class="schedule" id="schedule">09:00 - 00:00</div>
+                    </div>
+                    <div class="image-text">
+                        <img src="../../images/phone.png" class="phone">
+                        <div class="phoneNumber" id="phone">917 898 400</div>
+                    </div>
+                    <div class="image-text">
+                        <img src="../../images/www.png" class="www">
+                        <a class="link" id="website">www.pratocheio.pt</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="follow" id="follow">Follow</button>
     </div>
     <div class="lowerMenu">
-        <img src="../../images/weatherThursday.png" class="weatherThursday">
-        <img src="../../images/averageVisitors.png" class="averageVisitors">
-        <div class="gallery">
-           <div class="galleryTitle"><b>Gallery</b></div>
-           <img src="../../images/nextButton.png" class="previousButton">
-           <img src="../../images/nextButton.png" class="nextButton">
-           <img src="../../images/pratoCheio.webp" class="gallery1">
-           <img src="../../images/pastel-de-nata.jpg" class="gallery2">
-           <img src="../../images/bife.webp" class="gallery3">
+        <div class="lowerRight">
+            <div class="gallery">
+                <p class="galleryTitle">Gallery</p>
+                <div class="gallery-slider">
+                    <img src="../../images/nextButton.png" class="previousButton">
+                    <div class="images">
+                        <img src="../../images/pratoCheio.webp" class="gallery1">
+                        <img src="../../images/pastel-de-nata.jpg" class="gallery2">
+                        <img src="../../images/bife.webp" class="gallery3">
+                    </div>
+                    <img src="../../images/nextButton.png" class="nextButton">
+                </div>
+                
+            </div>
+            <div class="comments" id="add-comment">
+                    <div class="commentsTitle"><b>Comments</b></div>
+                    <div class="comment-area">
+                        <input type="text" class="commentSection" id="comment-text" placeholder="Add a comment...">
+                        <img src="../../images/sendIcon.png" class="submmit-comment" id="submmit-comment">
+                    </div>
+            </div>
         </div>
-        <div class="comments">
-            <div class="commentsTitle"><b>Comments</b></div>
-            <input type="text" class="commentSection" placeholder="Add a comment..."><br><br>
+       
+        <div class="lowerLeft">
+            <img src="../../images/weatherThursday.png" id="weather" class="weatherThursday">
+            <img src="../../images/averageVisitors.png" class="averageVisitors">
         </div>
     </div>
+
+    <script> 
+            LocProfileLoad();
+    </script>
 </html>

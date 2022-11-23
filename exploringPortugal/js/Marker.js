@@ -16,6 +16,7 @@ function loadAddMarker() {
     
     create_button.addEventListener("click", function () {
         let name = document.getElementById("add-name").value;
+        let cat = document.getElementById("add-marker-category");
         let latlong = document.getElementById("add-lat-long");
         latlong = latlong.value.split(" ");
         let location = document.getElementById("add-location").value;
@@ -25,7 +26,7 @@ function loadAddMarker() {
         let tags = document.getElementById("add-tags").value;
 
 
-        let vg = new NormVG(name, latlong[0], latlong[1], VG_ORDERS[2], location, schedule, phone, link, tags);
+        let vg = new NormVG(name, latlong[0], latlong[1], cat.options[cat.selectedIndex].text, location, schedule, phone, link, tags);
 
         map.addMarker(map.getIcons(), vg);
 

@@ -3,7 +3,8 @@ var add_lat_long = false;
 
 function Filter() {
     let div = document.getElementById('filter-wrapper');
-    //console.log(div);
+    let urlParams = new URLSearchParams(window.location.search);
+    let category = urlParams.get('category'); 
 
     for(let i = 0; i < VG_ORDERS.length; i++) {
         let row = document.createElement('div');
@@ -12,8 +13,23 @@ function Filter() {
         let checkbox = document.createElement('input');
         checkbox.className = "filter checkbox";
         checkbox.type = "checkbox";
-        checkbox.checked = true;
+
+	    if(category != null) {
+            if(VG_ORDERS[i] === category) {
+                checkbox.checked = true;
+            } else {
+                checkbox.checked = false;
+            }
+        } else {
+            checkbox.checked = true;
+        }
+
         checkbox.id = VG_ORDERS[i];
+        
+        if(category != null) {
+            checkboxUpdate(checkbox);
+        }
+        
         checkbox.addEventListener("click", function () {
                     checkboxUpdate(this);
         });

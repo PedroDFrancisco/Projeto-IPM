@@ -2,8 +2,12 @@
 
 const MAP_CENTRE =
 	[38.661,-9.2044];  // FCT coordinates
-const REGIONS =
-	{"norte" : [41.301977,-7.74669], "centro" : [40.175996,-7.915166], "lisboa" : [38.704895,-9.137148]};
+const REGIONS_CORD =
+	{"norte" : [41.301977,-7.74669], "centro" : [40.175996,-7.915166], "lisboa" : [38.704895,-9.137148],
+		"alentejo" : [38.158728,-7.893503], "algarve" : [37.099392, -8.154431], "madeira" : [32.945422, -16.708784], "acores" : [38.30361, -27.058975]};
+const REGIONS_ZOOM =
+	{"norte" : 9, "centro" : 9, "lisboa" : 10,
+		"alentejo" : 9, "algarve" : 9, "madeira" : 10, "acores" : 7};
 const MAP_ID =
 	"mapid";
 const MAP_ATTRIBUTION =
@@ -79,6 +83,7 @@ class POI {
 		this.name = getFirstValueByTagName(xml, "name");
 		this.latitude = getFirstValueByTagName(xml, "latitude");
 		this.longitude = getFirstValueByTagName(xml, "longitude");
+		console.log(this.name);
 	}
 }
 
@@ -102,14 +107,16 @@ class VG extends POI {
 	}
 
 	popMessage () {
-		return "<b>" + this.name + "</b>" + "<br>" +
+		return "<b>" + this.name + "</b>" + "<br>" + "<br>" +
 		"Category: " + this.order + "<br>" +
 		"Location: " + this.location + "<br>" +
 		"Schedule: " + this.schedule + "<br>" +
 		"Phone: " + this.phone + "<br>" +
 		"Website: " + this.link + "<br>" +
-		"Tags: " + this.tags + "<br>" +
-		"<br> <a href= /exploringPortugal/html/locationsProfile.html>"+"<button>More Info</button>" +"</a>";
+		"Tags: " + this.tags +
+		"<br> <a href= locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
+		this.location.replaceAll(" ", "-")+"&schedule="+this.schedule.replaceAll(" ", "_")+"&phone="+
+		this.phone.replaceAll(" ", "-")+"&website="+this.link+">"+"<button>More Info</button>" +"</a>";
 	}
 }
 
@@ -135,13 +142,16 @@ class NormVG {
 	}
 
 	popMessage () {
-		return "<b>" + this.name + "</b>" + "<br>" +
+		return "<b>" + this.name + "</b>" + "<br>" + "<br>" +
 		"Category: " + this.order + "<br>" +
 		"Location: " + this.location + "<br>" +
 		"Schedule: " + this.schedule + "<br>" +
 		"Phone: " + this.phone + "<br>" +
-		"Website: " + this.link + 
-		"<br> <a href= /exploringPortugal/html/locationsProfile.html"+"<button>More Info</button>" +"</a>";
+		"Website: " + this.link +
+		"Tags: " + this.tags +
+		"<br> <a href= locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
+		this.location.replaceAll(" ", "-")+"&schedule="+this.schedule.replaceAll(" ", "_")+"&phone="+
+		this.phone.replaceAll(" ", "-")+"&website="+this.link+">"+"<button>More Info</button>" +"</a>";
 	}
 }
 
@@ -219,22 +229,7 @@ class Map {
 			alert("Empty file");
 		else {
 			for(let i = 0 ; i < xs.length ; i++) {
-				//let order = getFirstValueByTagName (xs[i], "order");
-				let circle = null;
 				let vg = new VG(xs[i]);
-				/*switch (order) {
-					case "1":
-						vg = new VG1 (xs[i], order);
-						break;
-					case "2":
-						vg = new VG2 (xs[i], order);
-						break;
-					case "3":
-						vg = new VG3 (xs[i], order);
-						break;
-					default:
-						vg = new VG4 (xs[i], order);
-				}*/
 				vgs.push(vg);
 			}
 		}
@@ -318,10 +313,9 @@ class Map {
 function onLoad()
 {
 	let urlParams = new URLSearchParams(window.location.search);
-  	let region = urlParams.get('region');
-  	console.log(region);  
+  	let region = urlParams.get('region');  
 	if(region != null) {
-		map = new Map(REGIONS[region], 9);
+		map = new Map(REGIONS_CORD[region], REGIONS_ZOOM[region]);
 	} else {
 		map = new Map(MAP_CENTRE, 5);
 	}
