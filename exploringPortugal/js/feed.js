@@ -124,7 +124,6 @@ function init() {
         } else {
             suggestions1();
         }
-        //loadPeople(page);
     });
     document.getElementById("upperrightarrow").addEventListener("click", function () {
         if(document.getElementById("sp1").querySelector("h2").innerHTML == "RicFazeres"){
@@ -132,7 +131,6 @@ function init() {
         } else {
             suggestions1();
         }
-        //loadPeople(page);
     });
 }
 
