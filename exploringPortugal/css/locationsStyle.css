@@ -122,6 +122,7 @@ html {
     height: 100vh;
     display: flex;
     column-gap: 10px;
+    justify-content: center;
 }
 
 .lowerMenu .lowerRight {
@@ -185,6 +186,8 @@ html {
     /*position: absolute;*/
     height: 200px;
     /*padding-left: 80px;*/
+    width: 15.38vw;
+    max-width: 200px;
 } 
 
 .lowerMenu .gallery .gallery2 {
@@ -193,8 +196,8 @@ html {
     /*position: absolute;*/
     height: 200px;
     /*padding-left: 80px;*/
-    max-width: 340px;
-    width: 300px;
+    max-width: 300px;
+    width: 23.08vw;
 } 
 
 .lowerMenu .gallery .gallery3 {
@@ -203,6 +206,8 @@ html {
     /*position: absolute;*/
     height: 200px;
     /*padding-left: 80px;*/
+    max-width: 300px;
+    width: 23.08vw;
 } 
 
 .lowerMenu .comments {
@@ -227,7 +232,8 @@ html {
 }
 
 .lowerMenu .comments .commentSection {
-    width: 870px;
+    width: 66.92vw;
+    max-width: 870px;
     font-size: 15px;
     /*margin-top: 15px;*/
     padding-top: 7px;
@@ -257,4 +263,31 @@ html {
 .lowerMenu .gallery .galleryTitle{
     margin-left: 80px;
     font-weight: bold;
+}
+
+.submmit-comment {
+    filter: invert(12%) sepia(95%) saturate(2346%) hue-rotate(196deg) brightness(91%) contrast(102%);
+    width: 25px;
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+
+.comment-area {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.realComment {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+.comment-image {
+    border-radius: 50px;
 }
