@@ -6,7 +6,7 @@ const REGIONS_CORD =
 	{"norte" : [41.301977,-7.74669], "centro" : [40.175996,-7.915166], "lisboa" : [38.704895,-9.137148],
 		"alentejo" : [38.158728,-7.893503], "algarve" : [37.099392, -8.154431], "madeira" : [32.945422, -16.708784], "acores" : [38.30361, -27.058975]};
 const REGIONS_ZOOM =
-	{"norte" : 9, "centro" : 9, "lisboa" : 11,
+	{"norte" : 9, "centro" : 9, "lisboa" : 10,
 		"alentejo" : 9, "algarve" : 9, "madeira" : 10, "acores" : 7};
 const MAP_ID =
 	"mapid";
@@ -107,13 +107,13 @@ class VG extends POI {
 	}
 
 	popMessage () {
-		return "<b>" + this.name + "</b>" + "<br>" +
+		return "<b>" + this.name + "</b>" + "<br>" + "<br>" +
 		"Category: " + this.order + "<br>" +
 		"Location: " + this.location + "<br>" +
 		"Schedule: " + this.schedule + "<br>" +
 		"Phone: " + this.phone + "<br>" +
 		"Website: " + this.link + "<br>" +
-		"Tags: " + this.tags + "<br>" +
+		"Tags: " + this.tags +
 		"<br> <a href= locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
 		this.location.replaceAll(" ", "-")+"&schedule="+this.schedule.replaceAll(" ", "_")+"&phone="+
 		this.phone.replaceAll(" ", "-")+"&website="+this.link+">"+"<button>More Info</button>" +"</a>";
@@ -142,13 +142,13 @@ class NormVG {
 	}
 
 	popMessage () {
-		return "<b>" + this.name + "</b>" + "<br>" +
+		return "<b>" + this.name + "</b>" + "<br>" + "<br>" +
 		"Category: " + this.order + "<br>" +
 		"Location: " + this.location + "<br>" +
 		"Schedule: " + this.schedule + "<br>" +
 		"Phone: " + this.phone + "<br>" +
 		"Website: " + this.link +
-		"Tags: " + this.tags + "<br>" +
+		"Tags: " + this.tags +
 		"<br> <a href= locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
 		this.location.replaceAll(" ", "-")+"&schedule="+this.schedule.replaceAll(" ", "_")+"&phone="+
 		this.phone.replaceAll(" ", "-")+"&website="+this.link+">"+"<button>More Info</button>" +"</a>";
