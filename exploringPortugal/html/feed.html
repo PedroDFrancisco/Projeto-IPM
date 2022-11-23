@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <script type="text/javascript" src="..\js\feed.js"></script>
     </head>
-<body onload ="loadPeople()">
+<body onload ="init()">
     <div class="menu">
         <nav>
             <a href="home.html"><img src="../../images/logo_letras_bandeira_v4.png" class="logo_img"></a>
@@ -79,7 +79,7 @@
         <div class="suggestedPeople">
             <h1>Suggested users for you</h1>
             <div class="suggestionBoxes">
-                <img class="upperleftarrow" src="/images/left-arrow.png"/>
+                <img id="upperleftarrow" src="/images/left-arrow.png"/>
                 <div class="box" id="sp1">
                     <img/>
                     <h2></h2>
@@ -100,13 +100,13 @@
                     <h2></h2>
                     <h3></h3>
                 </div>
-                <img class="upperrightarrow" src="/images/arrow-right.png"/>
+                <img id="upperrightarrow" src="/images/arrow-right.png"/>
             </div>
         </div>
         <div class="suggestedPlaces">
             <h1>Suggested destinations for you</h1>
             <div class="suggestionBoxes">
-                <img class="lowerleftarrow" src="/images/left-arrow.png"/>
+                <img id="lowerleftarrow" src="/images/left-arrow.png"/>
                 <div class="box" id="sp5">
                     <img/>
                     <h2></h2>
@@ -127,7 +127,7 @@
                     <h2></h2>
                     <h3></h3>
                 </div>
-                <img class="lowerrightarrow" src="/images/arrow-right.png"/>
+                <img id="lowerrightarrow" src="/images/arrow-right.png"/>
             </div>
         </div>
     </div>

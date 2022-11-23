@@ -1,5 +1,3 @@
-var page = 1;
-
 function suggestions1(){
 
     var sp = document.getElementById("sp1");
@@ -117,14 +115,24 @@ function suggestions3(){
     followers.innerHTML = "100k followers";
 }
 
-function loadPeople(page) {
-    //document.getElementsByClassName("suggestionBoxes").querySelector("upperleftarrow").addEventListener(onclick => );
+function init() {
     suggestions3();
-    if(page == 1){
-        suggestions1();
-        page = 2
-    } else {
-        suggestions2();
-        page = 1;
-    }
+    suggestions1();
+    document.getElementById("upperleftarrow").addEventListener("click", function () {
+        if(document.getElementById("sp1").querySelector("h2").innerHTML =="RicFazeres" ){
+            suggestions2();
+        } else {
+            suggestions1();
+        }
+        //loadPeople(page);
+    });
+    document.getElementById("upperrightarrow").addEventListener("click", function () {
+        if(document.getElementById("sp1").querySelector("h2").innerHTML == "RicFazeres"){
+            suggestions2();
+        } else {
+            suggestions1();
+        }
+        //loadPeople(page);
+    });
 }
+
