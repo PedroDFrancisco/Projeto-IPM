@@ -21,6 +21,7 @@ html {
     margin-left: 3.46vw;
     width: 130px;
     border-radius: 50%;
+    border: 1px solid #bebebe;
 }
 
 .upperMenu .upperMenu-left {
