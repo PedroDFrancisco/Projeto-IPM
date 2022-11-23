@@ -56,22 +56,29 @@ nav .menu-right .userIcon {
     height: auto;
 }
 .welcome {
-    position: absolute;
+    /*position: absolute;*/
     color: #47525E;
-    top: 100px;
+    /*top: 100px;
     margin-left: 56%;
-    font-size: 80px;
-    width: 40%;
+    font-size: 80px;*/
+    width: 90%;
 }
+
+.welcome-link {
+  position: absolute;
+  top: 100px;
+  margin-left: 56%;
+}
+
 .cont {
     text-align: center;
 }
 .background .gotomap {
-    top: 35.5%;
+    /*top: 35.5%;
     left: 76%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    position: absolute;
+    position: absolute;*/
     background-color: #003366; 
     border: none;
     color: white;
