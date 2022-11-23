@@ -5,13 +5,19 @@
 html {
     scroll-behavior: smooth;
 }
+
+.headerProfile {
+    display: flex;
+    justify-content: center;
+}
+
 .profilePic {
     position: absolute;
     display: block;
     margin-top: 230px;
     text-align: center;
     left: 50%;
-    width: 10%;
+    width: 160px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid white;
@@ -20,6 +26,7 @@ html {
     position: absolute;
     margin-top: 50px;
     width: 100%;
+    max-width: 1710px;
 }
 .lowerMenu {
     padding-top: 315px;
@@ -97,6 +104,8 @@ html {
 
 .posts.div.on {
     text-align: center;
+    background-color: #F5F5F5;
+    height: 100%;
 }
 
 .noPosts {
