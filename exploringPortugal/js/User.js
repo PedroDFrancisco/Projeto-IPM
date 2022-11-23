@@ -34,12 +34,14 @@ function ProfileLoad() {
     });
 
     let submitCom = document.getElementById('submmit-comment');
+    let center_comment = document.getElementById('center-comment');
 
     submitCom.addEventListener("click", function () {
         let comment = document.getElementById('add-comment');
 
         if (comment.value != "") {
             let row = document.createElement('div');
+            row.className = "realComment"
             row.innerHTML = "<br>"
 
             let img = document.createElement('img');
@@ -52,7 +54,7 @@ function ProfileLoad() {
 
             row.appendChild(img);
             row.appendChild(text);
-            divCom.appendChild(row);
+            center_comment.appendChild(row);
             comment.value = '';
         }
     });

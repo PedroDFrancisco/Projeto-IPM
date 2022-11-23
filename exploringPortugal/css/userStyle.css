@@ -98,8 +98,17 @@ html {
     display: block;
 }
 
+.division .comments .comment-textbox-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
 .division .comments .comment-textbox-wrapper .submmit-comment {
     cursor: pointer;
+    position: absolute;
+    right: 15px;
+    padding-top: 6px;
 }
 
 .posts.div.on {
@@ -205,8 +214,9 @@ html {
     width: 150px;
 }
 
-.comments.div{
-    text-align: center;
+.division .comments.div{
+    display: flex;
+    justify-content: center;
 }
 
 .comment-image{
@@ -229,4 +239,13 @@ html {
 
 .comments.div.on {
     background-color: #F5F5F5;
+}
+
+.realComment {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: 25px;
+    margin-top: 15px;
+    padding-bottom: 15px;
 }
