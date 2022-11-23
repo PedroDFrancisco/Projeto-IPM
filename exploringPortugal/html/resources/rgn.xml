@@ -586,4 +586,30 @@
       
     </tags>
   </vg>
+  <vg>
+    <name>Pastéis de Belém</name>
+    <order>Restaurant</order>
+    <latitude>38.69756909329187</latitude>
+    <longitude>-9.203216874192549</longitude>
+    <location>Lisboa</location>
+    <schedule>08:00-21:00</schedule>
+    <phone>213 637 423</phone>
+    <link>https://pasteisdebelem.pt/</link>
+    <tags>
+      Indoor
+    </tags>
+  </vg>
+  <vg>
+    <name>A Casa do Fado</name>
+    <order>Restaurant</order>
+    <latitude>41.140763659846876</latitude>
+    <longitude>-8.614988445262806</longitude>
+    <location>Porto</location>
+    <schedule>12:00-01:00</schedule>
+    <phone>927 572 955</phone>
+    <link>http://www.acasadofado.pt/</link>
+    <tags>
+      Indoor, Music
+    </tags>
+  </vg>
 </rgn>
