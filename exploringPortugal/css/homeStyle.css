@@ -94,23 +94,28 @@ footer{
     min-height:100px; 
     background:white;
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    padding-bottom: 15px;
 }
 .ptFlag{
-    margin-left: 34%;
-    margin-bottom: 20px;
+    /*margin-left: 34%;
+    margin-bottom: 20px;*/
     width: 100px;
 }
 .follow-us{
-    margin-top: 10px;
+    /*margin-top: 10px;
     position: absolute;
-    margin-left: 42%;
+    margin-left: 42%;*/
 }
 .icons1{
-    position: absolute;
+    /*position: absolute;*/
     height: 50px;
-    margin-top: 40px;
-    margin-left: 3%;
+    /*margin-top: 40px;
+    margin-left: 3%;*/
 }
 
 /* The navigation menu */
