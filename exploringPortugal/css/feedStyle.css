@@ -74,10 +74,10 @@
     color:dimgray;
 }
 
-#upperleftarrow {
+.upperleftarrow {
     cursor: pointer;
 }
 
-#upperrightarrow{
+.upperrightarrow{
     cursor: pointer;
 }
