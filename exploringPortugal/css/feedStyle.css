@@ -73,3 +73,11 @@
     font-size: 17px;
     color:dimgray;
 }
+
+.feedboard .suggestedPeople .upperleftarrow {
+    cursor: pointer;
+}
+
+.feedboard .suggestedPeople .upperrightarrow{
+    cursor: pointer;
+}

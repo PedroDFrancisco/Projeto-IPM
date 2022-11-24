@@ -143,6 +143,6 @@ function fernandoMendeslink(){
 }
 
 function relocate(){
-    window.location = "/exploringPortugal/html/userProfile.html";
+    window.location = "../html/userProfile.html";
 }
     
