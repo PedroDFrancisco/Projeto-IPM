@@ -74,10 +74,10 @@
     color:dimgray;
 }
 
-.upperleftarrow {
+.feedboard .suggestedPeople .upperleftarrow {
     cursor: pointer;
 }
 
-.upperrightarrow{
+.feedboard .suggestedPeople .upperrightarrow{
     cursor: pointer;
 }
