@@ -73,3 +73,11 @@
     font-size: 17px;
     color:dimgray;
 }
+
+#upperleftarrow {
+    cursor: pointer;
+}
+
+#upperrightarrow{
+    cursor: pointer;
+}
