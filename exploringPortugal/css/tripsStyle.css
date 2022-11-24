@@ -25,7 +25,7 @@
 
 .search .lupa {
     top: 25px;
-    right: 80px;
+    right: 6.5vw;
     position: absolute;
     cursor: pointer;
     height: 30px;
@@ -38,6 +38,7 @@
     justify-content: space-evenly;
     align-items: flex-start;
     row-gap: 25px;
+    margin-bottom: 25px;
     margin-top: 20px;
 }
 

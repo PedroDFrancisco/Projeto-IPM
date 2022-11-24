@@ -84,4 +84,19 @@ function ProfileLoad() {
             comment.value = '';
         }
     });
+
+    let follow = document.getElementById('follow');
+    let binary = 0;
+
+    follow.addEventListener("click", function () {
+        if(binary == 0) {
+        follow.classList.add("followed");
+        follow.innerHTML = "Following"
+        binary++;
+        } else {
+        follow.classList.remove("followed");
+        follow.innerHTML = "Follow"
+        binary--;
+        }
+    });
 }
