@@ -1,6 +1,7 @@
 .search {
     margin-top: 80px;
     position: relative;
+    text-align: -webkit-center;
 }
 
 .search input[type=text] {
@@ -37,7 +38,7 @@
 
 .table-wrapper .image-info .trip-image {
     width: 280px;
-    height: 200px;
+    height: auto;
 }
 
 .table-wrapper .image-info {
@@ -45,6 +46,8 @@
     column-gap: 15px;
     margin-left: 30px;
     margin-right: 30px;
+    background-color: #eee;
+    padding: 1%;
     /* flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start; */
