@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <script src="script.js"></script>
+    <script src="../js/Menu.js"></script>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Exploring Portugal - HomePage</title>
@@ -54,7 +54,23 @@
             <div class="menu-right">
                 <a href=""><img src="../../images/lupa.png" class="lupa"></a>
                 <a href="map.html"><img src="../../images/mapa.webp" class="mapa"></a>
-                <a href=""><img src="../../images/userIcon.png" class="userIcon"></a>
+                <div class="dropdown">
+                    <img onclick="myFunction()" src="../../images/nova logo.png" class="userIcon">
+                    <div id="myDropdown" class="dropdown-content">
+                      <div class="userName">
+                        <img src="../../images/nova logo.png" class="uIcon-Menu">
+                        <b>Nova Student</b>
+                        <p>nova.student</p>
+                      </div>
+                      <a href="#">Your profile</a>
+                      <div class="profMenu">
+                        <a href="#">Followers</a>
+                        <a href="#">Following</a>
+                        <a href="#">Favorite Places</a>
+                      </div>
+                    </div>
+                </div>
+                <!-- <a href=""><img src="../../images/nova logo.png" class="userIcon"></a> -->
             </div>
         </nav>
     </div>
