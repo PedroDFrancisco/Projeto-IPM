@@ -240,6 +240,7 @@ footer{
 .show {
   display:block;
   text-align: center;
+  right: -23px;
 }
 
 .dropdown-content b {
