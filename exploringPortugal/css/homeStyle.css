@@ -56,11 +56,7 @@ nav .menu-right .userIcon {
     height: auto;
 }
 .welcome {
-    /*position: absolute;*/
     color: #47525E;
-    /*top: 100px;
-    margin-left: 56%;
-    font-size: 80px;*/
     width: 90%;
 }
 
@@ -74,11 +70,6 @@ nav .menu-right .userIcon {
     text-align: center;
 }
 .background .gotomap {
-    /*top: 35.5%;
-    left: 76%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    position: absolute;*/
     background-color: #003366; 
     border: none;
     color: white;
@@ -102,15 +93,10 @@ footer{
     padding-bottom: 15px;
 }
 .ptFlag{
-    /*margin-left: 34%;
-    margin-bottom: 20px;*/
     width: 100px;
 }
 .icons1{
-    /*position: absolute;*/
     height: 50px;
-    /*margin-top: 40px;
-    margin-left: 3%;*/
 }
 
 /* The navigation menu */
@@ -158,7 +144,6 @@ footer{
 
 /* Style the subnav content - positioned absolute */
 .subnav-content {
-  /* padding-left: 250px; */
   display: none;
   position: absolute;
   left: 0;

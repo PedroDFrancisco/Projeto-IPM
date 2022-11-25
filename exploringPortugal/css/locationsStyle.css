@@ -8,7 +8,6 @@ html {
     scroll-behavior: smooth;
 }
 .upperMenu {
-    /* background-color: lightblue; */
     margin-top: 80px;
     display: flex;
     align-items: center;
@@ -154,31 +153,20 @@ html {
 }
 
 .lowerMenu .weatherThursday {
-    /*position: absolute;*/
-    /*float: right;*/
     width: 26.9vw;
-    /*margin-top: 7px;
-    margin-left: 1110px;*/
     margin-top: 10px;
     cursor: pointer;
 }
 
 .lowerMenu .averageVisitors {
-    /*position: absolute;*/
-    /*float: right;*/
     width: 26.9vw;
-    /*margin-top: 130px;
-    margin-left: 1100px;*/
 }
 
 .lowerMenu .gallery{
     font-size: 22px;
-    /*position: absolute;*/
     margin-top: 12px;
-    /*margin-left: 1.46vw;*/
     background-color: white;
     height: 280px;
-    /*width: 1030px;*/
     color: #003366;
     padding-top: 10px;
     border-radius: 50px;
@@ -196,44 +184,26 @@ html {
 }
 
 .lowerMenu .gallery .gallery1 {
-    /*margin-top: 10px;*/
-    /*position: absolute;*/
     height: 200px;
-    /*padding-left: 80px;*/
     width: 15.38vw;
     max-width: 200px;
 } 
 
 .lowerMenu .gallery .gallery2 {
-    /*margin-top: 10px;
-    margin-left: 220px;*/
-    /*position: absolute;*/
     height: 200px;
-    /*padding-left: 80px;*/
     max-width: 300px;
     width: 23.08vw;
 } 
 
 .lowerMenu .gallery .gallery3 {
-    /*margin-top: 10px;
-    margin-left: 570px;*/
-    /*position: absolute;*/
     height: 200px;
-    /*padding-left: 80px;*/
     max-width: 300px;
     width: 23.08vw;
 } 
 
 .lowerMenu .comments {
-    /*position: absolute;*/
-    /*height: 400px;
-    width: 1030px;*/
     background-color: white;
-    /*margin-top: 310px;
-    margin-left: 50px;
-    padding-left: 80px;*/
     border-radius: 50px;
-    /*margin-left: 1.46vw;*/
     margin-top: 20px;
 }
 
@@ -249,7 +219,6 @@ html {
     width: 66.92vw;
     max-width: 870px;
     font-size: 15px;
-    /*margin-top: 15px;*/
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 15px;
@@ -259,19 +228,13 @@ html {
 
 .lowerMenu .gallery .previousButton {
     filter: invert(14%) sepia(28%) saturate(6196%) hue-rotate(195deg) brightness(91%) contrast(102%);
-    /*position: absolute;*/
-    /*margin-top: 80px;
-    margin-left: 20px;*/
     width: 35px;
     transform:rotate(180deg);
 }
 
 .lowerMenu .gallery .nextButton {
     filter: invert(14%) sepia(28%) saturate(6196%) hue-rotate(195deg) brightness(91%) contrast(102%);
-    /*position: absolute;*/
     width: 35px;
-    /*margin-top: 80px;
-    margin-left: 970px;*/
 }
 
 .lowerMenu .gallery .galleryTitle{

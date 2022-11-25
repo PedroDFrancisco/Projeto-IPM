@@ -98,8 +98,6 @@ class VG extends POI {
 		this.visible = true;
 
 		this.tags = getFirstValueByTagName(xml, "tags");
-        //this.tags = getAllValuesByTagName(this.tags, "tag")[0].childNodes[0].nodeValue;
-        //console.log(this.tags);
 	}
 
 	isVisible () {
@@ -133,8 +131,6 @@ class NormVG {
 		this.visible = true;
 
 		this.tags = tags;
-        //this.tags = getAllValuesByTagName(this.tags, "tag")[0].childNodes[0].nodeValue;
-        //console.log(this.tags);
 	}
 
 	isVisible () {
@@ -209,7 +205,6 @@ class Map {
 			iconUrl: "??",
 			shadowUrl: "??",
 			iconSize: [65, 70],
-			// shadowSize: [16, 16],
 			iconAnchor: [65/2, 50],
 			shadowAnchor: [8, 8],
 			popupAnchor: [0, -40] // offset the determines where the popup should open
