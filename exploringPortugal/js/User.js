@@ -99,4 +99,34 @@ function ProfileLoad() {
         binary--;
         }
     });
+
+    let favorite1 = document.getElementById('favorite1');
+    let bin1 = 0;
+
+    favorite1.addEventListener("click", function () {
+        if(bin1 == 0) {
+            favorite1.classList.add("followed");
+            favorite1.innerHTML = "Following"
+            bin1++;
+        } else {
+            favorite1.classList.remove("followed");
+            favorite1.innerHTML = "Follow"
+            bin1--;
+        }
+    });
+
+    let favorite2 = document.getElementById('favorite2');
+    let bin2 = 0;
+
+    favorite2.addEventListener("click", function () {
+        if(bin2 == 0) {
+            favorite2.classList.add("followed");
+            favorite2.innerHTML = "Following"
+            bin2++;
+        } else {
+            favorite2.classList.remove("followed");
+            favorite2.innerHTML = "Follow"
+            bin2--;
+        }
+    });
 }
