@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <SCRIPT TYPE="text/javascript" SRC="../js/User.js"></SCRIPT>
+        <script src="../js/Menu.js"></script>
     </head>
     <div class="menu">
         <nav>
@@ -56,7 +57,22 @@
             <div class="menu-right">
                 <a href=""><img src="../../images/lupa.png" class="lupa"></a>
                 <a href="map.html"><img src="../../images/mapa.webp" class="mapa"></a>
-                <a href=""><img src="../../images/userIcon.png" class="userIcon"></a>
+                <div class="dropdown">
+                    <img onclick="myFunction()" src="../../images/nova logo.png" class="userIcon">
+                    <div id="myDropdown" class="dropdown-content">
+                      <div class="userName">
+                        <img src="../../images/nova logo.png" class="uIcon-Menu">
+                        <b>Nova Student</b>
+                        <p>nova.student</p>
+                      </div>
+                      <a href="#">Your profile</a>
+                      <div class="profMenu">
+                        <a href="#">Followers</a>
+                        <a href="#">Following</a>
+                        <a href="#">Favorite Places</a>
+                      </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </div>

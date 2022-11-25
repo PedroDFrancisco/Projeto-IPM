@@ -21,6 +21,7 @@
         <SCRIPT TYPE="text/javascript" SRC="../js/Map.js"></SCRIPT>
         <SCRIPT TYPE="text/javascript" SRC="../js/Filter.js"></SCRIPT>
         <SCRIPT TYPE="text/javascript" SRC="../js/Marker.js"></SCRIPT>
+        <script src="../js/Menu.js"></script>
     </head>
 
     <BODY ONLOAD="onLoad(); Filter(); loadAddMarker(); ">
@@ -71,7 +72,22 @@
                 <div class="menu-right">
                     <a href=""><img src="../../images/lupa.png" class="lupa"></a>
                     <a href="map.html"><img src="../../images/mapa.webp" class="mapa"></a>
-                    <a href=""><img src="../../images/userIcon.png" class="userIcon"></a>
+                    <div class="dropdown">
+                        <img onclick="myFunction()" src="../../images/nova logo.png" class="userIcon">
+                        <div id="myDropdown" class="dropdown-content">
+                          <div class="userName">
+                            <img src="../../images/nova logo.png" class="uIcon-Menu">
+                            <b>Nova Student</b>
+                            <p>nova.student</p>
+                          </div>
+                          <a href="#">Your profile</a>
+                          <div class="profMenu">
+                            <a href="#">Followers</a>
+                            <a href="#">Following</a>
+                            <a href="#">Favorite Places</a>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
