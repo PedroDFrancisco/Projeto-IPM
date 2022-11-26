@@ -43,7 +43,7 @@
     <order>Monument</order>
     <latitude>38.691751161212814</latitude>
     <longitude>-9.215891472341497</longitude>
-    <location>Lisboa</location>
+    <location>Lisbon</location>
     <schedule>10:00-17:30</schedule>
     <phone>213 620 034</phone>
     <link>http://www.torrebelem.pt/</link>
@@ -69,7 +69,7 @@
     <order>Monument</order>
     <latitude>38.68983366298793</latitude>
     <longitude>-9.177207062551853</longitude>
-    <location>Lisboa</location>
+    <location>Lisbon</location>
     <schedule>Not available</schedule>
     <phone>212947920</phone>
     <link>https://www.lusoponte.pt/</link>
@@ -82,7 +82,7 @@
     <order>Museum</order>
     <latitude>38.69681509038669</latitude>
     <longitude>-9.19839305884899</longitude>
-    <location>Lisboa</location>
+    <location>Lisbon</location>
     <schedule>10:00-18:00</schedule>
     <phone>210 492 400</phone>
     <link>http://museudoscoches.gov.pt/pt/</link>
@@ -147,7 +147,7 @@
     <order>Sports</order>
     <latitude>38.761363678940846</latitude>
     <longitude>-9.16175270537576</longitude>
-    <location>Lisboa</location>
+    <location>Lisbon</location>
     <schedule>Not available</schedule>
     <phone>217 516 000</phone>
     <link>https://www.sporting.pt/</link>
@@ -160,7 +160,7 @@
     <order>Sports</order>
     <latitude>38.75275281416083</latitude>
     <longitude>-9.184752545354609</longitude>
-    <location>Lisboa</location>
+    <location>Lisbon</location>
     <schedule>Not available</schedule>
     <phone>707 200 100</phone>
     <link>https://www.slbenfica.pt/pt-pt/loja/bilhetes/estadio-e-museu</link>
@@ -353,7 +353,7 @@
     <order>Hotel</order>
     <latitude>38.77480899873474</latitude>
     <longitude>-9.091580494298903</longitude>
-    <location>Lisboa</location>
+    <location>Lisbon</location>
     <schedule>Not available</schedule>
     <phone>211 107 600</phone>
     <link>https://www.sanahotels.com/pt/hotel/myriad-by-sana/</link>
@@ -418,7 +418,7 @@
     <order>Nature</order>
     <latitude>38.46995074850683</latitude>
     <longitude>-28.399171961800413</longitude>
-    <location>Ilha do Pico, Açores</location>
+    <location>Ilha do Pico, Azores</location>
     <schedule>Not available</schedule>
     <phone>Not available</phone>
     <link>Not available</link>
@@ -457,7 +457,7 @@
     <order>Nature</order>
     <latitude>37.85526390370414</latitude>
     <longitude>-25.786418869724674</longitude>
-    <location>Ponta Delgada, Açores</location>
+    <location>Ponta Delgada, Azores</location>
     <schedule>Not available</schedule>
     <phone>Not available</phone>
     <link>Not available</link>
@@ -535,7 +535,7 @@
     <order>Other</order>
     <latitude>38.77564376498971</latitude>
     <longitude>-9.13535597418966</longitude>
-    <location>Lisboa</location>
+    <location>Lisbon</location>
     <schedule>24 hours</schedule>
     <phone>218 413 500</phone>
     <link>https://www.aeroportolisboa.pt/pt/</link>
@@ -570,11 +570,11 @@
     </tags>
   </vg>
   <vg>
-    <name>Rock in Rio - Lisboa</name>
+    <name>Rock in Rio - Lisbon</name>
     <order>Festival</order>
     <latitude>38.7504546977668</latitude>
     <longitude>-9.126389063050585</longitude>
-    <location>Lisboa</location>
+    <location>Lisbon</location>
     <schedule>Not available</schedule>
     <phone>Not available</phone>
     <link>http://rockinriolisboa.sapo.pt/</link>
@@ -587,7 +587,7 @@
     <order>Restaurant</order>
     <latitude>38.69756909329187</latitude>
     <longitude>-9.203216874192549</longitude>
-    <location>Lisboa</location>
+    <location>Lisbon</location>
     <schedule>08:00-21:00</schedule>
     <phone>213 637 423</phone>
     <link>https://pasteisdebelem.pt/</link>
