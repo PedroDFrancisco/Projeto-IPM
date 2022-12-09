@@ -105,13 +105,13 @@ class VG extends POI {
 	}
 
 	popMessage () {
-		return "<b>" + this.name + "</b>" + "<br>" + "<br>" +
-		"Category: " + this.order + "<br>" +
-		"Location: " + this.location + "<br>" +
-		"Schedule: " + this.schedule + "<br>" +
-		"Phone: " + this.phone + "<br>" +
-		"Website: " + this.link + "<br>" +
-		"Tags: " + this.tags +
+		return "<h2>" + this.name + "</h2>" + "<br>" +
+		"<b>Category:</b> " + this.order + "<br>" +
+		"<b>Location:</b> " + this.location + "<br>" +
+		"<b>Schedule:</b> " + this.schedule + "<br>" +
+		"<b>Phone:</b> " + this.phone + "<br>" +
+		"<b>Website:</b> " + this.link + "<br>" +
+		"<b>Tags:</b> " + this.tags +
 		"<br> <a href= locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
 		this.location.replaceAll(" ", "-")+"&schedule="+this.schedule.replaceAll(" ", "_")+"&phone="+
 		this.phone.replaceAll(" ", "-")+"&website="+this.link+">"+"<button>More Info</button>" +"</a>";
@@ -138,13 +138,13 @@ class NormVG {
 	}
 
 	popMessage () {
-		return "<b>" + this.name + "</b>" + "<br>" + "<br>" +
-		"Category: " + this.order + "<br>" +
-		"Location: " + this.location + "<br>" +
-		"Schedule: " + this.schedule + "<br>" +
-		"Phone: " + this.phone + "<br>" +
-		"Website: " + this.link +
-		"Tags: " + this.tags +
+		return "<h2>" + this.name + "</h2>" + "<br>" +
+		"<b>Category:</b> " + this.order + "<br>" +
+		"<b>Location:</b> " + this.location + "<br>" +
+		"<b>Schedule:</b> " + this.schedule + "<br>" +
+		"<b>Phone:</b> " + this.phone + "<br>" +
+		"<b>Website:</b> " + this.link +
+		"<b>Tags:</b> " + this.tags +
 		"<br> <a href= locationsProfile.html?name="+this.name.replaceAll(" ", "-")+"&location="+
 		this.location.replaceAll(" ", "-")+"&schedule="+this.schedule.replaceAll(" ", "_")+"&phone="+
 		this.phone.replaceAll(" ", "-")+"&website="+this.link+">"+"<button>More Info</button>" +"</a>";

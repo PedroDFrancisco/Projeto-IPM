@@ -136,10 +136,6 @@
     font-size: 13px;
 }
 
-.leaflet-popup-content b {
-    font-size: 20px;
-}
-
 .leaflet-popup-content button {
     background-color: #003366; 
     border: none;
