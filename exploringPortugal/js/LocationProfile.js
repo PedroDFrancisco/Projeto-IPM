@@ -76,10 +76,10 @@ function LocProfileLoad() {
 
   weather.addEventListener("click", function () {
       if(counter == 0) {
-        weather.src = "../../images/weatherFriday.png";
+        weather.src = "../../images/weatherFriday.PNG";
       }
       if(counter == 1) {
-        weather.src = "../../images/weatherSaturday.png";
+        weather.src = "../../images/weatherSaturday.PNG";
       }
       counter++;
   });
